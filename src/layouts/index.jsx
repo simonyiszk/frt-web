@@ -2,6 +2,7 @@ import React from "react";
 import Helmet from "react-helmet";
 import config from "../../data/SiteConfig"
 import Link from "gatsby-link";
+import Headroom from "react-headroom"
 import "./index.css";
 
 import fb from "./fb.png"
@@ -9,16 +10,20 @@ import insta from "./insta.png"
 import frt from "./frt.png"
 import banner from "./banner.png"
 
+const linkStyle = {
+  margin: 10,
+}
+
 export default class MainLayout extends React.Component {
   render() {
     const { children } = this.props;
     return (
-      <div style={{margin: '0 auto'}}>
+      <div style={{margin: '0 auto', color: 'white'}}>
         <Helmet>
           <title>BME Formula Racing Team</title>
           <meta name="description" content={config.siteDescription} />
         </Helmet>
-        <header style={{display: 'inline-block', width: 1220}}>
+        <header style={{display: 'block', height: 100}}>
           <div style={{float: 'left'}}>
             <Link to='/'>
               <div style={{display: 'inline'}}>
@@ -26,51 +31,46 @@ export default class MainLayout extends React.Component {
                 <img src={banner} />
               </div>
             </Link>
-            
           </div>
           <div style={{float: 'right'}}>
-          <Link to='/' style={{margin: 10}}>
+            <Link to='/' style={linkStyle}>
               Hírek
             </Link>
-            <Link to='/about' style={{margin: 10}}>
+            <Link to='/about' style={linkStyle}>
               Csapat
             </Link>
-            <Link to='/cars' style={{margin: 10}}>
+            <Link to='/cars' style={linkStyle}>                
               Autók
             </Link>
-            <Link to='/gallery' style={{margin: 10}}>
+            <Link to='/gallery' style={linkStyle}>
               Galéria
             </Link>
           </div>
         </header>
 
-        <br />
+        <div>
+          {children()}
+        </div>
 
-        {children()}
-
-        <footer style={{display: 'inline-block', 'justifyContent': 'center', 'alignContents': 'center', position: 'fixed', bottom:'10'}}>
-
-          <Link to='/sponsors' style={{margin: 50}}>
-            Szponzorok
-          </Link>
-
-          {/* Placeholder*/}
-
-          <a href="http://facebook.com" style={{margin: 50}}>
-            <img src={fb} />
-          </a>
-
-        {/* Placeholder*/}
-
-          <a href="http://instagram.com" style={{margin: 50}}>
-            <img src={insta} />
-          </a>
-
-
-          <a href="mailto://korber314@gmail.com" style={{margin: 50}}>Kapcsolat</a>
-
+        <footer style={{display: 'inline-block', left: 0, right: 0, 'justifyContent': 'center', 'alignContents': 'center', position: 'fixed', bottom:'10'}}>
+          <div style={{float: "left"}}>
+            <Link to='/sponsors' style={{margin: 50}}>
+             Szponzorok
+            </Link>
+            {/* Placeholder*/}
+            <a href="http://facebook.com" style={{margin: 50}}>
+              <img src={fb} />
+            </a>
+            {/* Placeholder*/}
+             <a href="http://instagram.com" style={{margin: 50}}>
+               <img src={insta} />
+             </a>
+             <a href="mailto:korber314@gmail.com" style={{margin: 50}}>Kapcsolat</a>
+           </div>
+          <div style={{float: 'right', margin: 10}}>
+            Design by SchDesign
+          </div>
         </footer>
-
       </div>
     );
   }
