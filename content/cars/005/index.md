@@ -1,0 +1,11 @@
+---
+title: FRC-005
+date: 2017-07-01
+Weight: 221
+Acc: 3.6
+Topsp: 200+
+---
+
+Az FRT-s zsargonban “Maulaként” is emlegetett FRC-004 a csapat 2011-es versenyautója, ami elődjénél 20 százalékkal könnyebb, mindössze 225 kilogrammot nyom. Ehhez társul a motor 85 lóerőre emelkedett teljesítménye, ami jelentős előrelépést jelent az autó menetdinamikai paraméterei terén. A fejlődés jegyében az autó minden részegysége javult a korábbiakhoz képest: az alkatrészek igényesebb anyagok felhasználásával készültek a beépített Dexler differenciálmű a Formula Student versenyautóhoz elérhető legjobb megoldás, a motorvezérlést pedig a szintén elhíresült MoTec rendszer látja el. A csapat teljesen áttervezte a sebességváltót és szimulációs szoftverek segítségével hónapokig csiszolta a futómű-geometriát.
+
+Az FRC-004 révén a BME Formula Racing Team 2011-ben csatlakozott a Formula Student csapatok élmezőnyéhez. A műegyetemisták versenyautója a silverstone-i sprintfutamon leggyorsabbak között szerepelt úgy, hogy az autó előzetes tesztelésére csak nagyon kevés idő jutott. Az angliai futam után viszont a csapat nem hagyott fel a munkával, így az augusztus végi, győri futamra már egy finomított versenyautóval készültek, ami a népes mezőny harmadik leggyorsabb nevezőjének bizonyult. Mivel a csapat tagjainak meggyőződése, hogy az FRC-004-ben további rejtett tartalékok lakoznak, további tesztek, finomított beállítások és az autóról szerzett bővebb információk révén szeretnék a meglévő konstrukciót még gyorsabbá tenni, hogy a 2012-es futamokon még jobb eséllyel szállhasson harcba a dobogós helyekért
