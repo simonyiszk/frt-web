@@ -29,13 +29,11 @@ export const pageQuery = graphql`
     ) {
       edges {
         node {
-          fields {
-            slug
-          }
-          excerpt
-          timeToRead
           frontmatter {
             title
+          }
+          fields {
+            slug
           }
         }
       }

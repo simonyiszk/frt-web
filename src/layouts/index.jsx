@@ -12,6 +12,7 @@ import banner from "./banner.png"
 
 const linkStyle = {
   margin: 10,
+  padding: "20px 0"
 }
 
 export default class MainLayout extends React.Component {
@@ -24,15 +25,15 @@ export default class MainLayout extends React.Component {
           <meta name="description" content={config.siteDescription} />
         </Helmet>
         <header style={{display: 'block', height: 100}}>
-          <div style={{float: 'left'}}>
+          <div style={{float: 'left', padding: '20px 0'}}>
             <Link to='/'>
-              <div style={{display: 'inline'}}>
+              <div style={{display: 'inline', padding: "20px auto"}}>
                 <img src={frt} />
                 <img src={banner} />
               </div>
             </Link>
           </div>
-          <div style={{float: 'right'}}>
+          <div style={{float: 'right',margin: "20px auto"}}>
             <Link to='/' style={linkStyle}>
               Hírek
             </Link>
