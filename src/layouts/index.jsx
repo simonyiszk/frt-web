@@ -21,7 +21,11 @@ const topNav = {
 
 const linkStyle = {
   textDecoration: "none",
-  margin: 50,
+  height: 50,
+  marginLeft: 20,
+  marginRight: 20,
+  marginTop: 'auto',
+  marginBottom: 'auto',
 }
 
 export default class MainLayout extends React.Component {
@@ -45,28 +49,28 @@ export default class MainLayout extends React.Component {
             </Link>
           </div>
 
-          <div style={{float: 'right'}}>
-            <Link to="/" style={{linkStyle}}>
+          <div style={{float: 'right', height: 50, }}>
+            <Link to="/" style={linkStyle}>
               Hírek
             </Link>
-             <Link to="/about" style={{linkStyle}}>
+             <Link to="/about" style={linkStyle}>
               Csapat
             </Link>
-             <Link to="/cars" style={{linkStyle}}>
+             <Link to="/cars" style={linkStyle}>
               Autók
             </Link>
-             <Link to="/gallery" style={{linkStyle}}>
+             <Link to="/gallery" style={linkStyle}>
               Galléria
             </Link>
           </div>
         </header>
 
-        <div style={{marginTop: 100}}>
+        <div style={{marginTop: 100, marginBottom: 100}}>
           {children()}
         </div>
 
         <footer style={{position: 'absolute', bottom: 0, left: 0, right: 0}}>
-          <div style={{float: "left"}}>
+          <div style={{float: "left", padding: '10px auto'}}>
             <Link to="/sponsors" style={linkStyle}>
               Szponzorok
             </Link>

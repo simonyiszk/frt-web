@@ -9,6 +9,15 @@ import config from "../../data/SiteConfig";
 import "./b16-tomorrow-dark.css";
 import "./post.css";
 
+const extra = {
+  "disqus": " <Disqus postNode={postNode} />",
+  "userInfo": "<UserInfo config={config} />",
+  "meta": "<div className='post-meta'> \
+            <PostTags tags={post.tags} /> \
+            <SocialLinks postPath={slug} postNode={postNode} /> \
+          </div>"
+}
+
 export default class PostTemplate extends React.Component {
   render() {
     const { slug } = this.props.pathContext;
@@ -31,12 +40,6 @@ export default class PostTemplate extends React.Component {
             {post.title}
           </h1>
           <div dangerouslySetInnerHTML={{ __html: postNode.html }} />
-          <div className="post-meta">
-            <PostTags tags={post.tags} />
-            <SocialLinks postPath={slug} postNode={postNode} />
-          </div>
-          <UserInfo config={config} />
-          <Disqus postNode={postNode} />
         </div>
       </div>
     );
