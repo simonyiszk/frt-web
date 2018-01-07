@@ -1,8 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto|Sarpanch');
-
+@import url('https://fonts.googleapis.com/css?family=Rajdhani|Sarpanch');
+@font-face {
+  font-family: 'BankGothic';
+  src: url('bgothm.ttf')  format('truetype');
+}
 * {
     box-sizing: border-box;
-    font-family: Roboto;
+    font-family: Rajdhani;
 }
 
 html {
@@ -10,7 +13,7 @@ html {
 }
 
 h1 {
-	font-family: Sarpanch;
+	font-family: BankGothic;
 	text-decoration: none;
 	background: linear-gradient(to right, #C8102E , #151515);
 	padding: 10px;
