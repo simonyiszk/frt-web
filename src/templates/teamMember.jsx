@@ -39,9 +39,6 @@ export const memberQuery = graphql`
       excerpt
       frontmatter {
         title
-        cover {
-          relativePath
-        }
       }
       fields {
         slug

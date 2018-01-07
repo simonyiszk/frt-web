@@ -39,9 +39,6 @@ export const carQuery = graphql`
       excerpt
       frontmatter {
         title
-        cover {
-          relativePath
-        }
       }
       fields {
         slug

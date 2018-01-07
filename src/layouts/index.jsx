@@ -7,8 +7,7 @@ import "./index.css";
 
 import fb from "./fb.png"
 import insta from "./insta.png"
-import frt from "./frt.png"
-import banner from "./banner.png"
+import frt from "./frt_logo.png"
 
 const topNav = {
     overflow: 'hidden',
@@ -43,8 +42,8 @@ export default class MainLayout extends React.Component {
           <div style={{float: "left"}}>
             <Link to="/" style={{linkStyle}}>
               <div style={{display: "inline"}}>
-                <img src={frt} />
-                <img src={banner} />
+                <img src={frt} style={{width: 100, height: 100}}/>
+                <h1>BME Formula Racing Team</h1>
               </div>
             </Link>
           </div>

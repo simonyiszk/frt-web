@@ -2,6 +2,7 @@
 
 * {
     box-sizing: border-box;
+    font-family: Roboto;
 }
 
 html {
@@ -11,10 +12,8 @@ html {
 h1 {
 	font-family: Sarpanch;
 	text-decoration: none;
-}
-
-p {
-	font-family: Roboto;
+	background: linear-gradient(to right, #C8102E , #151515);
+	padding: 10px;
 }
 
 body {
