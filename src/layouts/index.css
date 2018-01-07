@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto|Sarpanch');
+
 * {
     box-sizing: border-box;
 }
@@ -6,9 +8,19 @@ html {
     height: 100%;
 }
 
+h1 {
+	font-family: Sarpanch;
+	text-decoration: none;
+}
+
+p {
+	font-family: Roboto;
+}
+
 body {
     background-color: #151515;
     padding: 20px;
+    margin: 0px;
 }
 
 a {
