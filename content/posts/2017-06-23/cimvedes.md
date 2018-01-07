@@ -1,6 +1,7 @@
 ---
 title: Címvédés a szezon első versenyén
 date: 2017-06-23
+cover: team.png
 ---
 
 2017. június 9, hajnal 03:00: A BME Formula Racing Team elindul Németországba, hogy aztán 1200 km megtétele után megnyerje szezonja első versenyét!
@@ -20,7 +21,6 @@ Habár csak nemrég jöttünk haza a szezon első versenyéről, amelyet a legna
 
 Mindez persze nem sikerülhetett volna támogatóink nélkül, akiknek ezúton is köszönjük a rengeteg segítséget, türelmet és munkát!
 
-![](team.png)
-
 [Szombati összefoglaló](https://www.facebook.com/vdeerace/videos/781172198725337/?hc_ref=PAGES_TIMELINE)
+
 [Vasárnapi összefoglaló](https://www.facebook.com/vdeerace/videos/781630852012805/?hc_ref=PAGES_TIMELINE)

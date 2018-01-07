@@ -39,7 +39,8 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
       graphql(
         `
         {
-          allMarkdownRemark{
+          allMarkdownRemark
+          {
            edges {
              node {
               frontmatter{
@@ -63,7 +64,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
             path: edge.node.fields.slug,
             component: postPage,
             context: {
-              slug: edge.node.fields.slug
+              slug: edge.node.fields.slug,
             }
           });
         });

@@ -18,6 +18,7 @@ A Rollout után folytatódik a tesztidőszak, amely már április közepe óta t
 A Rolloutról bővebben itt olvashat:
 
 [Autopro.hu](https://autopro.hu/techtogether/Ezzel-a-jarmuvel-akarjak-vegignyerni-a-2018-as-FS-szezont-a-BME-sek-videoval/22102/)
+
 [Autoszektor.hu](http://www.autoszektor.hu/hu/content/ime-legujabb-magyar-formula-auto)
 
 Az eseményen készült képek [ITT](https://goo.gl/IiOBhR) találhatók.

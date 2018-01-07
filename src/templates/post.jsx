@@ -52,6 +52,9 @@ export const pageQuery = graphql`
       excerpt
       frontmatter {
         title
+        cover {
+          relativePath
+        }
       }
       fields {
         slug
