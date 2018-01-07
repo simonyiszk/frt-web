@@ -35,6 +35,8 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
 
   return new Promise((resolve, reject) => {
     const postPage = path.resolve("src/templates/post.jsx");
+    const carPage = path.resolve("src/templates/car.jsx");
+    const teamMemberPage = path.resolve("src/templates/teamMember.jsx");
     resolve(
       graphql(
         `
@@ -43,6 +45,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
           {
            edges {
              node {
+              fileAbsolutePath
               frontmatter{
                 title
               }
@@ -60,13 +63,33 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
           reject(result.errors);
         }
         result.data.allMarkdownRemark.edges.forEach(edge => {
-          createPage({
+          if (edge.node.fileAbsolutePath.match("/(posts)/")){
+            createPage({
             path: edge.node.fields.slug,
             component: postPage,
             context: {
               slug: edge.node.fields.slug,
             }
           });
+          }
+          else if (edge.node.fileAbsolutePath.match("/(cars)/")){
+            createPage({
+            path: edge.node.fields.slug,
+            component: carPage,
+            context: {
+              slug: edge.node.fields.slug,
+            }
+          });
+          }
+          else if (edge.node.fileAbsolutePath.match("/(team)/")){
+            createPage({
+            path: edge.node.fields.slug,
+            component: teamMemberPage,
+            context: {
+              slug: edge.node.fields.slug,
+            }
+          });
+          }
         });
       })
     );
