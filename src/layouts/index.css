@@ -15,7 +15,7 @@ html {
 h1 {
 	font-family: BankGothic;
 	text-decoration: none;
-	background: linear-gradient(to right, #C8102E , #151515);
+  color: white;
 	padding: 10px;
 }
 
