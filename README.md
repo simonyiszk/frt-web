@@ -1,6 +1,6 @@
 ### UPDATE
 
-A projekt a (netlfify.com-on)[https://frt.netlify.com] van hostolva, ami azt jelenti hogy az oldal mindig a master branch állapotát tükrözi.
+A projekt a [netlfify.com-on](https://frt.netlify.com) van hostolva, ami azt jelenti hogy az oldal mindig a master branch állapotát tükrözi.
 
 Ezért mindenki a `develop` brach-re pusholjon, és minden komolyabb mérföldkőnél merge-elünk a `master`-be.
 
