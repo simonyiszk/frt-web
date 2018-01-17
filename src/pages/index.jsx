@@ -19,8 +19,8 @@ export default class IndexPage extends React.Component {
 				</div>
 
 				<div style={{display: 'flex', flexDirection: 'column', verticalAlign: 'middle', textAlign: 'center', height: '70%', margin: 'auto'}}>
-						<h1 style={{fontSize: '3rem', zIndex: 10}}>Az oldal fejlesztés alatt áll.</h1>
-						<h1  style={{fontSize: '3rem', zIndex: 10}}>Hamarosan újra itt vagyunk.</h1>
+						<h1 style={{fontSize: '3rem', zIndex: 10}}>Az oldal fejlesztés alatt áll</h1>
+						<h1  style={{fontSize: '3rem', zIndex: 10}}>Hamarosan újra itt vagyunk</h1>
 				</div>
 
 				<div style={{display: "flex", justifyContent: 'center', height: '15%', zIndex: 10, margin: 20}}>
