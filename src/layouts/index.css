@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Rajdhani|Sarpanch');
+
 @font-face {
   font-family: 'BankGothic';
   src: url('bgothm.ttf')  format('truetype');
 }
+
 * {
     box-sizing: border-box;
     font-family: Rajdhani;
@@ -16,12 +18,9 @@ h1 {
 	font-family: BankGothic;
 	text-decoration: none;
   color: white;
-	padding: 10px;
 }
 
 body {
-    background-color: #151515;
-    padding: 20px;
     margin: 0px;
 }
 
