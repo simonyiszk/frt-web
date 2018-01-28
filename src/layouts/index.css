@@ -6,25 +6,15 @@
 }
 
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     font-family: Rajdhani;
-}
-
-html {
-    height: 100%;
+    color: white;
+    text-decoration-color: #c8102e;
 }
 
 h1 {
 	font-family: BankGothic;
 	text-decoration: none;
-  color: white;
-}
-
-body {
-    margin: 0px;
-}
-
-a {
-	color: white;
-
 }

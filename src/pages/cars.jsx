@@ -4,6 +4,27 @@ import PostListing from "../components/PostListing/PostListing";
 import SEO from "../components/SEO/SEO";
 import config from "../../data/SiteConfig";
 
+import CarDetail from "../components/CarDetail/CarDetail"
+
+
+export default class Cars extends React.Component {
+  render(){
+    return (
+      <div style={{display: "flex", scrollSnapType: "mandatory", overflow: "hidden", width: "100%", overflowX: "scroll"}}>
+        <CarDetail />
+        <CarDetail />
+        <CarDetail />
+      </div>
+      );
+  }
+}
+
+
+
+
+
+/*
+old
 class Cars extends React.Component {
   render() {
     const postEdges = this.props.data.allMarkdownRemark.edges;
@@ -19,7 +40,7 @@ class Cars extends React.Component {
 
 export default Cars;
 
-/* eslint no-undef: "off"*/
+/* eslint no-undef: "off"
 export const pageQuery = graphql`
   query carsQuery {
     allMarkdownRemark(
@@ -40,3 +61,4 @@ export const pageQuery = graphql`
     }
   }
 `;
+*/

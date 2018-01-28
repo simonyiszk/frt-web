@@ -1,37 +1,33 @@
 import React, { Component } from "react";
-import Link from "gatsby-link";
-import UserLinks from "../UserLinks/UserLinks";
-import "./Footer.css";
 
-class Footer extends Component {
+import Fb from './images/Facebook.svg';
+import Insta from './images/Instagram.svg';
+import Mail from './images/Mail.svg';
+import YouTube from './images/YouTube.svg';
+
+export default class Footer extends Component {
   render() {
-    const { config } = this.props;
-    const url = config.siteRss;
-    const copyright = config.copyright;
-    if (!copyright) {
-      return null;
-    }
-    return (
-      <footer className="footer">
-        <UserLinks config={config} labeled />
-        <div className="notice-container">
-          <h4>
-            {copyright}
-          </h4>
+    return(
+        <div style={{backgroundColor: "black", display: 'flex', flex: 1, justifyContent: 'space-between'}}>
+          <div style={{width: "25%", display: "flex", justifyContent: "space-around", alignItems: 'center', padding: "5px"}}>
+            <a target="_blank" href="https://www.facebook.com/FormulaRacingTeam/">
+              <img src={Fb} />
+            </a>
+            <a target="_blank" href="https://www.instagram.com/bme_formularacingteam/">
+              <img src={Insta} />
+            </a>
+            <a target="_blank" href="mailto:info.bme.frt@gmail.com">
+              <img src={Mail} />
+            </a>
+            <a target="_blank" href="https://www.youtube.com/user/bmeFRT">
+              <img src={YouTube} />
+            </a>
+          </div>
 
-          <Link to={url}>
-            <button>Subscribe</button>
-          </Link>
-          <h4>
-            Based on{" "}
-            <a href="https://github.com/Vagr9K/gatsby-advanced-starter">
-              Gatsby Advanced Starter
-            </a>.
-          </h4>
+          <div style={{display: "flex", alignItems: 'center', paddingRight: "10px"}}>
+            <a href="http://schdesign.hu" target="_blank">Designed by SCHDesign</a><a target="_blank" href="https://www.youtube.com/watch?v=4LfJnj66HVQ">.</a>
+          </div>
         </div>
-      </footer>
-    );
+      );
   }
 }
-
-export default Footer;
