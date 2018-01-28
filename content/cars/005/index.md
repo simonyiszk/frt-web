@@ -2,6 +2,9 @@
 title: FRC-005
 date: 2017-07-01
 cover: 005.png
+weight: 221 kg
+acceleration: 3.6
+top speed: 200
 ---
 
 Az FRT-s zsargonban “Maulaként” is emlegetett FRC-004 a csapat 2011-es versenyautója, ami elődjénél 20 százalékkal könnyebb, mindössze 225 kilogrammot nyom. Ehhez társul a motor 85 lóerőre emelkedett teljesítménye, ami jelentős előrelépést jelent az autó menetdinamikai paraméterei terén. A fejlődés jegyében az autó minden részegysége javult a korábbiakhoz képest: az alkatrészek igényesebb anyagok felhasználásával készültek a beépített Dexler differenciálmű a Formula Student versenyautóhoz elérhető legjobb megoldás, a motorvezérlést pedig a szintén elhíresült MoTec rendszer látja el. A csapat teljesen áttervezte a sebességváltót és szimulációs szoftverek segítségével hónapokig csiszolta a futómű-geometriát.
