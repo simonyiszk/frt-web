@@ -1,4 +1,7 @@
 import React from "react";
+
+import styled from "styled-components";
+
 import Helmet from "react-helmet";
 import PostListing from "../components/PostListing/PostListing";
 import SEO from "../components/SEO/SEO";
@@ -6,15 +9,23 @@ import config from "../../data/SiteConfig";
 
 import CarDetail from "../components/CarDetail/CarDetail"
 
+const Wrapper = styled.div`
+  display: flex;
+  scroll-snap-type: mandatory;
+  overflow: hidden;
+  width: 100%;
+  overflow-x: scroll;  
+`
+
 
 export default class Cars extends React.Component {
   render(){
     return (
-      <div style={{display: "flex", scrollSnapType: "mandatory", overflow: "hidden", width: "100%", overflowX: "scroll"}}>
+      <Wrapper>
         <CarDetail />
         <CarDetail />
         <CarDetail />
-      </div>
+      </Wrapper>
       );
   }
 }
