@@ -25,7 +25,7 @@ export default class Footer extends Component {
           </div>
 
           <div style={{display: "flex", alignItems: 'center', paddingRight: "10px"}}>
-            <a href="http://schdesign.hu" target="_blank">Designed by SCHDesign</a><a target="_blank" href="https://www.youtube.com/watch?v=4LfJnj66HVQ">.</a>
+            <a href="http://schdesign.hu" target="_blank">Designed by SCHDesign</a><a target="_blank" href="https://youtu.be/4LfJnj66HVQ?t=17s">.</a>
           </div>
         </div>
       );

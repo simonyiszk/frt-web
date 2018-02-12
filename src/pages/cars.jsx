@@ -15,17 +15,33 @@ const Wrapper = styled.div`
   overflow: hidden;
   width: 100%;
   overflow-x: scroll;  
+  overflow-y: auto;
 `
 
-
 export default class Cars extends React.Component {
+  constructor(props) {
+    super(props);
+  
+    this.state = {
+      itemsCount: 3,
+      shownItemIndex: 0,
+    };
+  }
+
+  scroll = () => {
+    console.log("scrolling detected");
+  }
+
   render(){
     return (
-      <Wrapper>
-        <CarDetail />
-        <CarDetail />
-        <CarDetail />
-      </Wrapper>
+      <div>
+        <Wrapper onScroll={()=>console.log("clicked")}>
+          <CarDetail id="0" />
+          <CarDetail id="1" />
+          <CarDetail id="2" />
+        </Wrapper>
+       {/* <span>{this.state.shownItemIndex}</span> */}
+      </div>
       );
   }
 }

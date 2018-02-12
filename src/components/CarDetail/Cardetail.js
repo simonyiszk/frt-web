@@ -39,7 +39,7 @@ const Illustration = styled.img`
 	right: 0;
 `
 
-const CarDetail = () => (
+const CarDetail = ({onScroll}) => (
 	<Wrapper>
           <TextSection>
           <article>
