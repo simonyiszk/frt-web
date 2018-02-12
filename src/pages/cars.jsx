@@ -1,5 +1,4 @@
 import React from "react";
-
 import styled from "styled-components";
 
 import Helmet from "react-helmet";
@@ -7,7 +6,7 @@ import PostListing from "../components/PostListing/PostListing";
 import SEO from "../components/SEO/SEO";
 import config from "../../data/SiteConfig";
 
-import CarDetail from "../components/CarDetail/CarDetail"
+import CarDetail from "../components/CarDetail/CarDetail.js"
 
 const Wrapper = styled.div`
   display: flex;
@@ -28,14 +27,10 @@ export default class Cars extends React.Component {
     };
   }
 
-  scroll = () => {
-    console.log("scrolling detected");
-  }
-
   render(){
     return (
       <div>
-        <Wrapper onScroll={()=>console.log("clicked")}>
+        <Wrapper>
           <CarDetail id="0" />
           <CarDetail id="1" />
           <CarDetail id="2" />
