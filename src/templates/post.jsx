@@ -87,7 +87,7 @@ consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolor
   }
 }
 
-/* eslint no-undef: "off"*/
+/* eslint no-undef: "off"
 export const pageQuery = graphql`
   query BlogPostBySlug($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
@@ -103,3 +103,4 @@ export const pageQuery = graphql`
     }
   }
 `;
+*/

@@ -31,6 +31,7 @@ export default class CarTemplate extends React.Component {
 	}
 }
 
+/*
 export const memberQuery = graphql`
   query memberBySlugQuery($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
@@ -46,3 +47,4 @@ export const memberQuery = graphql`
     }
   }
 `;
+*/
