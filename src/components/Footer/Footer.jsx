@@ -5,6 +5,8 @@ import Insta from './images/Instagram.svg';
 import Mail from './images/Mail.svg';
 import YouTube from './images/YouTube.svg';
 
+/* 'tis but a comment */
+
 export default class Footer extends Component {
   render() {
     return(
