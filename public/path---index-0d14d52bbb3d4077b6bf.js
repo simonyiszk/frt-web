@@ -1,2 +1,0 @@
-webpackJsonp([0x81b8806e4260],{380:function(e,t){e.exports={data:{allMarkdownRemark:{edges:[{node:{frontmatter:{title:"Címvédés a szezon első versenyén"},fields:{slug:"/cimvedes-a-szezon-elso-versenyen"}}},{node:{frontmatter:{title:"Bemutatkozott az FREC-007"},fields:{slug:"/bemutatkozott-az-frec-007"}}}]}},pathContext:{}}}});
-//# sourceMappingURL=path---index-0d14d52bbb3d4077b6bf.js.map

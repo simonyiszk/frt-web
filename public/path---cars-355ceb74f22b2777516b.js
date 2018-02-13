@@ -1,2 +1,0 @@
-webpackJsonp([0xf27d7c49c3f3],{383:function(t,e){t.exports={data:{allMarkdownRemark:{edges:[{node:{frontmatter:{title:"FREC-004"},fields:{slug:"/frec-004"}}},{node:{frontmatter:{title:"FRC-005"},fields:{slug:"/frc-005"}}}]}},pathContext:{}}}});
-//# sourceMappingURL=path---cars-355ceb74f22b2777516b.js.map

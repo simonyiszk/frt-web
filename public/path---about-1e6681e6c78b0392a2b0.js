@@ -1,2 +1,0 @@
-webpackJsonp([0xf927f8900006],{373:function(t,e){t.exports={data:{allMarkdownRemark:{edges:[{node:{frontmatter:{title:"Bíró Bálint"},fields:{slug:"/biro-balint"}}},{node:{frontmatter:{title:"Bukovácz Kristóf"},fields:{slug:"/bukovacz-kristof"}}}]}},pathContext:{}}}});
-//# sourceMappingURL=path---about-1e6681e6c78b0392a2b0.js.map
