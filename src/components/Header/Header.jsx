@@ -16,7 +16,6 @@ const Li = styled.li`
 	}
 `
 
-
 const SelectedLi = Li.extend`
 	text-decoration: underline;
 	text-decoration-color: #c8102e;
@@ -61,7 +60,7 @@ export default class Header extends Component {
 							<SelectedLi><Link to="/cars/">Autók</Link></SelectedLi>
 							<Li><Link to="/gallery/">Galléria</Link></Li>
 							<Li><Link to="/sponsors/">Szponzoraink</Link></Li>
-							<Li><Link to="/404/">Kapcsolat</Link></Li>
+							<Li><Link to="/contact/">Kapcsolat</Link></Li>
 						</Ul>
 					</Nav>
 			</HeaderContainer>
