@@ -70,16 +70,17 @@ const RaceItem = ({imgURL, title, description, attributes}) => (
       <h3>{title}</h3>
       <p>{description}</p>
     </div>
-    <div style={{flex: 1}}>
-    {
-      Object.keys(attributes).map((item) => (
-        <div>
-          <h3>{item}</h3>
-          <p>{attributes[item]}</p>
-        </div>
+    { attributes && <div style={{flex: 1}}>
+      {
+        Object.keys(attributes).map((item) => (
+          <div>
+            <h3>{item}</h3>
+            <p>{attributes[item]}</p>
+          </div>
         ))
+      }
+      </div>
     }
-    </div>
   </RaceItemContainer>
 );
 
@@ -119,8 +120,8 @@ class About extends React.Component {
             <RaceItem imgURL={Icon} title="Gyorsulás" description={accDesc} attributes={accAttr} />
             <RaceItem imgURL={Icon} title="Gyorsulás" description={accDesc} attributes={accAttr} />
             <h2>Statikus</h2>
-            <RaceItem imgURL={Icon} title="Gyorsulás" description={accDesc} attributes={accAttr} />
-            <RaceItem imgURL={Icon} title="Gyorsulás" description={accDesc} attributes={accAttr} />
+            <RaceItem imgURL={Icon} title="Gyorsulás" description={accDesc} />
+            <RaceItem imgURL={Icon} title="Gyorsulás" description={accDesc} />
           </RaceContainer> 
         </section>
         <section>
