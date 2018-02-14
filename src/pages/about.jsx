@@ -86,7 +86,6 @@ const RaceItem = ({imgURL, title, description, attributes}) => (
 
 class About extends React.Component {
   render() {
-    const postEdges = this.props.data.allMarkdownRemark.edges;
     return (
       <div>
         <section>
@@ -133,28 +132,3 @@ class About extends React.Component {
 }
 
 export default About;
-
-/*
-eslint no-undef: "off"
-export const pageQuery = graphql`
-  query AboutQuery {
-    allMarkdownRemark(
-      limit: 2000
-      sort: { fields: [frontmatter___date], order: DESC }
-      filter: {fileAbsolutePath: {regex: "/(team)/.*\\.md$/"}}
-    ) {
-      edges {
-        node {
-          frontmatter {
-            title
-          }
-          fields {
-            slug
-          }
-        }
-      }
-    }
-  }
-`;
-
-*/
