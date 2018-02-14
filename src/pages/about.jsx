@@ -134,7 +134,8 @@ class About extends React.Component {
 
 export default About;
 
-/* eslint no-undef: "off"
+/*
+eslint no-undef: "off"
 export const pageQuery = graphql`
   query AboutQuery {
     allMarkdownRemark(

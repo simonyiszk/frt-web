@@ -2,6 +2,7 @@ const path = require("path");
 const _ = require("lodash");
 const webpackLodashPlugin = require("lodash-webpack-plugin");
 
+/*
 exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
   const { createNodeField } = boundActionCreators;
   let slug;
@@ -62,6 +63,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
           console.log(result.errors);
           reject(result.errors);
         }
+        console.log(result);
         result.data.allMarkdownRemark.edges.forEach(edge => {
           if (edge.node.fileAbsolutePath.match("/(posts)/")){
             createPage({
@@ -96,6 +98,8 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
     
   });
 };
+
+*/
 
 exports.modifyWebpackConfig = ({ config, stage }) => {
   if (stage === "build-javascript") {

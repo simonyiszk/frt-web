@@ -7,7 +7,6 @@ class SponsorsPage extends Component {
   render() {
     return (
       <div style={{'color': 'white'}}>
-        <Helmet title={`Sponsors | ${config.siteTitle}`} />
        	<div>
        		Sponsors page
        	</div>

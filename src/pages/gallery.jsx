@@ -6,9 +6,8 @@ class GalleryPage extends Component {
   render() {
     return (
       <div style={{'color': 'white'}}>
-        <Helmet title={`Gallery | ${config.siteTitle}`} />
        	<div>
-       		About page
+       		Gallery page
        	</div>
       </div>
     );
