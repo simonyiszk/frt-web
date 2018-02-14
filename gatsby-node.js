@@ -2,7 +2,6 @@ const path = require("path");
 const _ = require("lodash");
 const webpackLodashPlugin = require("lodash-webpack-plugin");
 
-/*
 exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
   const { createNodeField } = boundActionCreators;
   let slug;
@@ -98,8 +97,6 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
     
   });
 };
-
-*/
 
 exports.modifyWebpackConfig = ({ config, stage }) => {
   if (stage === "build-javascript") {
