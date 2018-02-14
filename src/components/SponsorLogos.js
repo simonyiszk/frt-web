@@ -60,4 +60,4 @@ const SponsorOther = styled.img`
 	margin: 3%;
 `
 
-export {SponsorLarge, SponsorMedium, SponsorSilver, SponsorBronze, SponsorOther};
+export { SponsorLarge, SponsorMedium, SponsorSilver, SponsorBronze, SponsorOther };

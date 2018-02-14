@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 const PostContaier = styled.div`
-  width: 600px;
+  width: 65%;
   border-radius: 7px;
   color: white;
   background-color: #C8102E;
@@ -14,6 +14,7 @@ const PostContaier = styled.div`
 const Image = styled.img`
   border-radius: 7px 7px 0px 0px;
   flex: 2;
+  object-fit: cover;
 `
 
 const PostText = styled.div`
