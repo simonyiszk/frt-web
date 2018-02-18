@@ -4,6 +4,7 @@ import styled from "styled-components";
 const PersonContainer = styled.div`
 	background: linear-gradient(to bottom, rgba(200, 16, 46, 1.0), rgba(200, 16, 46, 0.2));
 	display: flex;
+	width: 300px;
 	border-radius: 5px;
 	margin: 20px;
 `

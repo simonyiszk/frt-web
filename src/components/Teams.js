@@ -58,7 +58,7 @@ const Peeps = styled.div`
 `
 
 const Division = ({name, members}) => (
-	<DivisionContainer>
+	<DivisionContainer id="0">
 		<Title><h1>{name}</h1></Title>
 		<PersonDetail first="Joe" last="Smith" title="Chief" school="Keef" email="chief@keef.com" image={Portrait}/>
 		<Peeps>
@@ -97,9 +97,7 @@ export default class Teams extends Component {
 				</div>
 				<SideBar>
 					<Ul>
-						<Li><a><h3>Quarter Vehicle</h3></a></Li>
-						<Li><a><h3>Quarter Vehicle</h3></a></Li>
-						<Li><a><h3>Quarter Vehicle</h3></a></Li>
+						<Li><a href="#0"><h3>Quarter Vehicle</h3></a></Li>
 					</Ul>
 				</SideBar>
 			</Container>

@@ -17,7 +17,7 @@ const Wrapper = styled.div`
 
 //Header-Footer Container
 const HFContainer = styled.div` 
-	height: 10%;
+	height: 8%;
 	width: 100%;
 	margin: 0;
 	display: flex;
@@ -25,7 +25,7 @@ const HFContainer = styled.div`
 `
 
 const ContentContainer = styled.div`
-	height: 80%;
+	height: 84%;
 	width: 100%;
 	overflow: scroll;
 `

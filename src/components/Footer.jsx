@@ -24,7 +24,7 @@ const Links = styled.div`
 const A = styled.a`
   height: 80%;
   width: 80%;
-  padding: 5px;
+  padding: 2px;
 `
 
 const Praise = styled.div`
@@ -57,7 +57,7 @@ export default class Footer extends Component {
           </Links>
 
           <Praise>
-            <a href="http://schdesign.hu" target="_blank">Designed by SCHDesign</a><a target="_blank" href="https://youtu.be/4LfJnj66HVQ?t=17s">.</a>
+            <a href="http://schdesign.hu" target="_blank">Designed for 🏎 by SCHDesign</a><a target="_blank" href="https://youtu.be/4LfJnj66HVQ?t=17s">.</a>
           </Praise>
         </Container>
       );

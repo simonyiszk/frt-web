@@ -12,6 +12,7 @@ const Wrapper = styled.div`
 	scroll-snap-align: start;
 	height: 100%;
 	width: 100%;
+  margin: auto 0px;
 	justify-content: space-between;
 	flex-shrink: 0;
 `
@@ -29,18 +30,41 @@ const DetailImage = styled.img`
 
 const DataSection = styled.div`
 	display: flex;
-	flex: 3;
-	justify-content: flex-end;
+	flex: 2;
 	margin-top: 20px;
 `
 
-const Illustration = styled.img`
-	position: absolute;
-	right: 0;
+const BackgroundCirle = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-end;
+  background-image: url(${Circle});
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+`
+const CarContainer = styled.img`
+  width : 100%;
 `
 
-const CarDetail = ({onScroll}) => (
-	<Wrapper>
+const StatsContainer = styled.div`
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  text-align: center;
+  padding: 50px 0 px;
+`
+
+const CarNumber = styled.h1`
+  margin: 20px;
+  font-size: 10rem;
+`
+
+const CarDetail = ({id}) => (
+	<Wrapper id={id}>
           <TextSection>
           <article>
             <h1>FRC - 005</h1>
@@ -58,11 +82,24 @@ const CarDetail = ({onScroll}) => (
            </article>
           </TextSection>
           <DataSection>
-            <div style={{position: "relative"}}>
-              <Illustration src={Circle} style={{top: 0, height:"100%"}}/>
-              <Illustration src={Num} style={{top: 0, width: "80%"}}/>
-              <Illustration src={Car} style={{bottom: 0, width: "1000px"}}/>
-            </div>
+            <BackgroundCirle>
+              <CarNumber>005</CarNumber>
+              <CarContainer src={Car} />
+              <StatsContainer>
+                <div>
+                  <h3>Tömeg:</h3>
+                  <h1>221 kg</h1>
+                </div>
+                <div>
+                  <h3>Gyorsulás (0-100 km/h):</h3>
+                  <h1>3.6 sec</h1>
+                </div>
+                <div>
+                  <h3>Végsebesség:</h3>
+                  <h1>200+ km/h</h1>
+                </div>
+              </StatsContainer>
+            </BackgroundCirle>
           </DataSection>
         </Wrapper>
 );
