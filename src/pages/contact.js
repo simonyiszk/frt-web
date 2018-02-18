@@ -21,6 +21,7 @@ const Info = styled.div`
 const Map = styled.iframe`
 	flex: 1;
 	border-radius: 0px 5px 5px 0px;
+	border: none;
 `
 
 const TextContainer = styled.div`
