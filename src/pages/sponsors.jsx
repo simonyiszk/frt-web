@@ -16,6 +16,7 @@ const Container = styled.div`
 const SponsorContainer = styled.div`
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: space-around;
 `
 
 const Diamond = (sponsors) => (

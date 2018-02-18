@@ -23,7 +23,7 @@ const SideBar = styled.aside`
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding: 10px;
+	padding: 10px 50px;
 `
 
 const Ul = styled.ul`
