@@ -5,7 +5,7 @@ const ContactContainer = styled.div`
 	display: flex;
 	width: 70%;
 	background: linear-gradient(to bottom, rgba(200, 16, 46, 1.0), rgba(200, 16, 46, 0.2));
-	height: 50%;
+	height: 70%;
 	border-radius: 10px;
 `
 
@@ -42,11 +42,11 @@ const Contact = () => (
 	<ContactContainer>
 		<Info>
 			<TextContainer>
-				<h1>Műhely</h1>
+				<h1>Műhely:</h1>
 				<h3>1205, Budapest Hosszú utca 156.</h3>
 			</TextContainer>
 			<TextContainer>
-				<h1>E-mail</h1>
+				<h1>E-mail:</h1>
 				<h3><a href="mailto:info.bme.frt@gmail.com">info.bme.frt@gmail.com</a></h3>
 			</TextContainer>
 		</Info>

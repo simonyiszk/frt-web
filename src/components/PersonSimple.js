@@ -7,7 +7,7 @@ const PersonContainer = styled.div`
 	display: flex;
 	flex-direction: column;
 	width: 15%;
-	overflow: hidden;
+	margin: 20px;
 `
 
 const Img = styled.img`
@@ -15,12 +15,11 @@ const Img = styled.img`
 	border-radius: 5px 5px 0px 0px;
 	max-width:100%;
 	max-height:100%;
+	object-fit: cover;
 `
 
 const NameContainer = styled.div`
 	flex: 1;
-	display: flex;
-	flex-direction: column;
 	text-align: center;
 	margin: 5px;
 `

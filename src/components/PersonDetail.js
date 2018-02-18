@@ -1,19 +1,17 @@
 import React from "react";
 import styled from "styled-components";
 
-import Portrait from "../../images/portrait.png";
-
 const PersonContainer = styled.div`
 	background: linear-gradient(to bottom, rgba(200, 16, 46, 1.0), rgba(200, 16, 46, 0.2));
 	display: flex;
-	width: 25%;
 	border-radius: 5px;
+	margin: 20px;
 `
 
 const PersonDetailContainer = styled.div`
 	display: flex;
 	flex-direction: column;
-	padding-left: 20px;
+	padding: 0px 20px;
 	justify-content: space-around;
 	flex: 1;
 `
@@ -29,15 +27,15 @@ const Img = styled.img`
 	flex: 1;
 `
 
-const PersonDetail = ({first, last, title, school, email}) => (
+const PersonDetail = ({first, last, title, school, email, image}) => (
 	<PersonContainer>
-		<Img src={Portrait} />
+		<Img src={image} />
 		<PersonDetailContainer>
-			<ContactContainer>
+			<div>
 				<h2>{last}</h2>
 				<h2>{first}</h2>
 				<p>{title}</p>
-			</ContactContainer>
+			</div>
 			<p>{school}</p>
 			<a href={"mailto:"+email}>{email}</a>
 		</PersonDetailContainer>
