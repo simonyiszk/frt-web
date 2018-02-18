@@ -61,6 +61,7 @@ const StatsContainer = styled.div`
 const CarNumber = styled.h1`
   margin: 20px;
   font-size: 10rem;
+  color: rgba(255, 255, 255, 0.3);
 `
 
 const CarDetail = ({id}) => (

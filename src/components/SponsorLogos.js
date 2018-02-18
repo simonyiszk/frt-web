@@ -3,15 +3,16 @@ import styled from "styled-components";
 
 const SponsorContainer = styled.div`	
 	background-color: black;
-	border-radius: 5px;
+	border-radius: 40px;
 	display: flex;
 	flex-direction: column;
 	width: 40%;
 	margin: 5%;
 `
 const Img = styled.img`
-	border-radius: 20px 20px 0px 0px;
+	border-radius: 40px 40px 0px 0px;
 	flex: 1;
+	object-fit: cover;
 `
 
 const Description = styled.div`
@@ -43,21 +44,27 @@ const SponsorMedium = ({name, image}) => (
 	)
 
 const SponsorSilver = styled.img`
-	border-radius: 5px;
-	width: 40%;
+	border-radius: 40px;
+	width: 30%;
+	height: 30%;
 	margin: 5%;
+	object-fit: cover;
 `
 
 const SponsorBronze = styled.img`
-	border-radius: 5px;
-	width: 30%;
+	border-radius: 30px;
+	width: 20%;
+	height: 20%;
 	margin: 3%;
+	object-fit: cover;
 `
 
 const SponsorOther = styled.img`
-	border-radius: 5px;
-	width: 22%;
+	width: 15%;
+	height: 15%;
+	border-radius: 20px;
 	margin: 3%;
+	object-fit: cover;
 `
 
 export { SponsorLarge, SponsorMedium, SponsorSilver, SponsorBronze, SponsorOther };
