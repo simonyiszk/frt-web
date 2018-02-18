@@ -36,6 +36,14 @@ const Selected = styled.li`
 	color: red;
 `
 
+const Img = styled.img`
+	height: 20px;
+`
+
+const OImg = Img.extend`
+	transform: rotate(180deg);
+`
+
 export default class IndexPage extends React.Component {
 	state = {
 		sections: ['one', 'two', 'three', "four", 'five'],
@@ -73,7 +81,7 @@ export default class IndexPage extends React.Component {
 		return (
 			<div>
 				<div style={{display: "flex", justifyContent: "center"}}>
-					<button onClick={()=>this.step("BACKWARD")}>⬅️</button>
+					<button onClick={()=>this.step("BACKWARD")}><OImg src="http://www.clker.com/cliparts/V/1/Z/A/h/U/left-arrow-right-hi.png" /></button>
 					<Ul>
 						{this.state.sections.map((item, index) => ( index === this.state.selectedIndex ?
 							<Selected key={index} onClick={()=>this.scrollTo(index)}>{item}</Selected>
@@ -81,7 +89,7 @@ export default class IndexPage extends React.Component {
 							<li key={index} onClick={()=>this.scrollTo(index)}>{item}</li>
 							))}
 					</Ul>
-					<button onClick={()=>this.step("FORWARD")} >➡️</button>
+					<button onClick={()=>this.step("FORWARD")} ><Img src="http://www.clker.com/cliparts/V/1/Z/A/h/U/left-arrow-right-hi.png" /></button>
 				</div>
 			<Wrapper>
 				{this.state.sections.map((item, index) => (

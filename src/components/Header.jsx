@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Link from 'gatsby-link';
 import styled from "styled-components";
 
-import Logo from "./images/frt_logo.svg";
+import Logo from "../images/frt_logo.svg";
 
 const Li = styled.li`
 	border-right: 1px solid #c8102e;

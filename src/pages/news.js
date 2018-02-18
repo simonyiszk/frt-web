@@ -3,7 +3,7 @@ import Helmet from "react-helmet";
 import styled from "styled-components";
 
 import Post from "../components/PostPreview";
-import SEO from "../components/SEO/SEO";
+import SEO from "../components/SEO";
 import config from "../../data/SiteConfig";
 
 import Sample from "../../images/sample.png";

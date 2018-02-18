@@ -3,11 +3,11 @@ import styled from "styled-components";
 import Waypoint from "react-waypoint";
 
 import Helmet from "react-helmet";
-import PostListing from "../components/PostListing/PostListing";
-import SEO from "../components/SEO/SEO";
+import PostListing from "../components/PostListing";
+import SEO from "../components/SEO";
 import config from "../../data/SiteConfig";
 
-import CarDetail from "../components/CarDetail/CarDetail";
+import CarDetail from "../components/CarDetail";
 
 const Wrapper = styled.div`
   display: flex;

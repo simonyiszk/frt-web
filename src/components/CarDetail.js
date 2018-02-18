@@ -1,11 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import Num from "./images/number.svg";
-import Circle from "./images/Circle.svg"
-import Car from "./images/car.png";
+import Num from "../images/number.svg";
+import Circle from "../images/Circle.svg"
+import Car from "../images/car.png";
 
-import Detail from "./images/detail.png";
+import Detail from "../images/detail.png";
 
 const Wrapper = styled.div`
 	display: flex;

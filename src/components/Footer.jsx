@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 
-import Fb from './images/Facebook.svg';
-import Insta from './images/Instagram.svg';
-import Mail from './images/Mail.svg';
-import YouTube from './images/YouTube.svg';
+import Fb from '../images/Facebook.svg';
+import Insta from '../images/Instagram.svg';
+import Mail from '../images/Mail.svg';
+import YouTube from '../images/YouTube.svg';
 
 const Container = styled.footer`
   background-color: black;

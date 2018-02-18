@@ -7,6 +7,7 @@ import Trophy from "../../images/trophy.png";
 const TrophyContainer = styled.div`
 	width: 1000px;
 	height: 370px;
+	margin: 40px 0px;
 	background: linear-gradient(to bottom, rgba(200, 16, 46, 1.0), rgba(200, 16, 46, 0.2));
 	display: flex;
 	border-radius: 10px;
@@ -73,19 +74,3 @@ const TrophyItem = ({data}) => (
 	)
 
 export default TrophyItem;
-
-const sampleData = {
-	"verseny": "Übermensch Race 2018",
-	"city": "Dresden",
-	"country": "Germany",
-	"helyezes": 1,
-	"indulok": 44,
-	"details": {
-		"Acceleration": "X.hely",
-		"Cost & Manufacturing":"X. hely",
-		"Efficiency":"X. hely",
-		"Skid Pad":"X. hely",
-		"Endurance":"X. hely",
-		"Auto cross":"X. hely",
-	}
-}

@@ -1,7 +1,7 @@
 import React from "react";
 import Helmet from "react-helmet";
 import config from "../../data/SiteConfig";
-import SEO from "../components/SEO/SEO";
+import SEO from "../components/SEO";
 
 export default class CarTemplate extends React.Component {
   render(){
