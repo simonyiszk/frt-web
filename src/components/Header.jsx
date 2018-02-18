@@ -58,7 +58,6 @@ export default class Header extends Component {
 							<Li><Link to="/news/">Hírek</Link></Li>
 							<Li><Link to="/about/">Rólunk</Link></Li>
 							<SelectedLi><Link to="/cars/">Autók</Link></SelectedLi>
-							<Li><Link to="/gallery/">Galléria</Link></Li>
 							<Li><Link to="/sponsors/">Szponzoraink</Link></Li>
 							<Li><Link to="/contact/">Kapcsolat</Link></Li>
 						</Ul>
@@ -67,3 +66,5 @@ export default class Header extends Component {
 		);
 	}
 }
+
+/*<Li><Link to="/gallery/">Galléria</Link></Li>*/
