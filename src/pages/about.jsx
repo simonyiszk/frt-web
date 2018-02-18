@@ -2,12 +2,47 @@ import React from "react";
 import Helmet from "react-helmet";
 import styled from "styled-components";
 
-import Post from "../components/PostPreview";
 import SEO from "../components/SEO/SEO";
 import config from "../../data/SiteConfig";
 
 import Sample from "../../images/sample.png";
 import Icon from "../../images/accicon.png";
+
+const PostContaier = styled.div`
+  width: 90%;
+  border-radius: 7px;
+  color: white;
+  background-color: #C8102E;
+  display: flex;
+  flex-direction: column;
+  margin: 30px auto;
+`
+
+const Image = styled.img`
+  border-radius: 7px 7px 0px 0px;
+  flex: 2;
+  object-fit: cover;
+`
+
+const PostText = styled.div`
+  margin: 20px;
+  flex: 1;
+`
+
+const DateP = styled.p`
+  float: right;
+`
+
+const Post = ({imgUrl, title, content, date}) => (
+  <PostContaier>
+    <Image src={imgUrl} />
+    <PostText>
+      {title && <h3>{title}</h3>}
+      <p>{content}</p>
+      {date && <DateP>{date}</DateP>}
+    </PostText>
+  </PostContaier>
+);
 
 const Title = styled.h1`
   font-size: 3em;
@@ -50,9 +85,8 @@ const RaceItemContainer = styled.div`
 
 const Img = styled.img`
   display: block;
-  width: 100%;
-  height: 100%;
-  flex: 1;
+  width: 25%;
+  height: 25%;
 `
 
 const accDesc = "Főként a motor teljesítményéről és a hajtásláncról ad jellemzést az, hogy milyen gyorsító képességgel rendelkezik a jármű. A feladat egy 75 méter hosszú táv megtétele álló helyzetből indulva a lehető legrövidebb idő alatt. Minden versenyszámhoz tartozik egy szintidő, amelynél lassabb teljesítés esetén csak a minimális 3,5 pont jár. A motorteljesítmény mellett nagy szerepe van az autó tömegének is. 300 kg-ot feltételezve a szükséges vonóerő átlagosan 2800–3200 N nagyságú, 266 mm-es kerékgördülési sugár mellett a hajtáslánc egyes elemeinek 745–850 Nm-t kell tudni elviselni.";
@@ -66,11 +100,11 @@ const accAttr = {
 const RaceItem = ({imgURL, title, description, attributes}) => (
   <RaceItemContainer>
     <Img src={imgURL}/>
-    <div style={{flex: 2}}>
+    <div style={{width: "50%"}}>
       <h3>{title}</h3>
       <p>{description}</p>
     </div>
-    { attributes && <div style={{flex: 1}}>
+    { attributes && <div style={{width: "25%"}}>
       {
         Object.keys(attributes).map((item) => (
           <div>

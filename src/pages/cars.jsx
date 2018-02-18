@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import Waypoint from "react-waypoint";
 
 import Helmet from "react-helmet";
 import PostListing from "../components/PostListing/PostListing";
@@ -18,14 +19,10 @@ const Wrapper = styled.div`
 `
 
 export default class Cars extends React.Component {
-  constructor(props) {
-    super(props);
-  
-    this.state = {
-      itemsCount: 3,
-      shownItemIndex: 0,
-    };
-  }
+  state = {
+      items: ['0', '1', '2', '3'],
+      activeIndex: 0
+    }
 
   render(){
     return (
@@ -35,7 +32,6 @@ export default class Cars extends React.Component {
           <CarDetail id="1" />
           <CarDetail id="2" />
         </Wrapper>
-       {/* <span>{this.state.shownItemIndex}</span> */}
       </div>
       );
   }

@@ -1,35 +1,65 @@
 import React, { Component } from "react";
+import styled from "styled-components";
 
 import Fb from './images/Facebook.svg';
 import Insta from './images/Instagram.svg';
 import Mail from './images/Mail.svg';
 import YouTube from './images/YouTube.svg';
 
-/* 'tis but a comment */
+const Container = styled.footer`
+  background-color: black;
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+`
+
+const Links = styled.div`
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5px;
+`
+
+const A = styled.a`
+  height: 80%;
+  width: 80%;
+  padding: 5px;
+`
+
+const Praise = styled.div`
+  display: flex;
+  align-items: center;
+  padding-right: 10px;
+`
+
+const Img = styled.img`
+  height: 100%;
+`
 
 export default class Footer extends Component {
   render() {
     return(
-        <div style={{backgroundColor: "black", display: 'flex', flex: 1, justifyContent: 'space-between'}}>
-          <div style={{width: "25%", display: "flex", justifyContent: "space-around", alignItems: 'center', padding: "5px"}}>
-            <a target="_blank" href="https://www.facebook.com/FormulaRacingTeam/">
-              <img src={Fb} />
-            </a>
-            <a target="_blank" href="https://www.instagram.com/bme_formularacingteam/">
-              <img src={Insta} />
-            </a>
-            <a target="_blank" href="mailto:info.bme.frt@gmail.com">
-              <img src={Mail} />
-            </a>
-            <a target="_blank" href="https://www.youtube.com/user/bmeFRT">
-              <img src={YouTube} />
-            </a>
-          </div>
+        <Container>
+          <Links>
+            <A target="_blank" href="https://www.facebook.com/FormulaRacingTeam/">
+              <Img src={Fb} />
+            </A>
+            <A target="_blank" href="https://www.instagram.com/bme_formularacingteam/">
+              <Img src={Insta} />
+            </A>
+            <A target="_blank" href="mailto:info.bme.frt@gmail.com">
+              <Img src={Mail} />
+            </A>
+            <A target="_blank" href="https://www.youtube.com/user/bmeFRT">
+              <Img src={YouTube} />
+            </A>
+          </Links>
 
-          <div style={{display: "flex", alignItems: 'center', paddingRight: "10px"}}>
+          <Praise>
             <a href="http://schdesign.hu" target="_blank">Designed by SCHDesign</a><a target="_blank" href="https://youtu.be/4LfJnj66HVQ?t=17s">.</a>
-          </div>
-        </div>
+          </Praise>
+        </Container>
       );
   }
 }
