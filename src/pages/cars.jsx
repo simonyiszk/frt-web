@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import Waypoint from "react-waypoint";
 
 import Helmet from "react-helmet";
 import PostListing from "../components/PostListing";
@@ -33,6 +32,7 @@ const Ul = styled.ul`
   li {
     margin: 5px;
     display: flex;
+    cursor: hand;
   }
 `
 
