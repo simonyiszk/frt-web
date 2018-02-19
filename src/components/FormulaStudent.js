@@ -103,8 +103,8 @@ const RaceItem = ({imgURL, title, description, attributes}) => (
     </div>
     { attributes && <div style={{width: "25%"}}>
       {
-        Object.keys(attributes).map((item) => (
-          <div>
+        Object.keys(attributes).map((item, index) => (
+          <div key={index}>
             <h3>{item}</h3>
             <p>{attributes[item]}</p>
           </div>

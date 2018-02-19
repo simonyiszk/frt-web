@@ -28,10 +28,18 @@ const HeaderContainer = styled.header`
 	background: linear-gradient(to bottom, black, black 60%, #212121);
 `
 
-const Img = styled.img`
-	width: 25%;
+const Home = styled.div`
+	height: 100%;
+	width: 100%;
 	display:flex;
 	margin: 0 10px;
+	justify-content: flex-start;
+	padding: 0px 5px;
+`
+
+const Img = styled.img`
+	padding: 2px;
+	display: block;
 `
 
 const Nav = styled.nav`
@@ -52,16 +60,20 @@ export default class Header extends Component {
 	render() {
 		return (
 			<HeaderContainer>
-					<Img src={Logo}/>
-					<Nav>
-						<Ul>
-							<Li><Link to="/news/">Hírek</Link></Li>
-							<Li><Link to="/about/">Rólunk</Link></Li>
-							<SelectedLi><Link to="/cars/">Autók</Link></SelectedLi>
-							<Li><Link to="/sponsors/">Szponzoraink</Link></Li>
-							<Li><Link to="/contact/">Kapcsolat</Link></Li>
-						</Ul>
-					</Nav>
+				<Link to="/">
+					<Home>
+						<img src={Logo} />
+					</Home>
+				</Link>
+				<Nav>
+					<Ul>
+						<Li><Link to="/news/">Hírek</Link></Li>
+						<Li><Link to="/about/">Rólunk</Link></Li>
+						<SelectedLi><Link to="/cars/">Autók</Link></SelectedLi>
+						<Li><Link to="/sponsors/">Szponzoraink</Link></Li>
+						<Li><Link to="/contact/">Kapcsolat</Link></Li>
+					</Ul>
+				</Nav>
 			</HeaderContainer>
 		);
 	}
