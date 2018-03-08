@@ -3,8 +3,7 @@ module.exports = {
   siteTitle: "BME Formula Racing Team", // Site title.
   siteTitleAlt: "BME Formula Racing Team", // Alternative site title for SEO.
   siteLogo: "/logos/logo-1024.png", // Logo used for SEO and manifest.
-  siteUrl: "https://vagr9k.github.io", // Domain of your website without pathPrefix.
-  pathPrefix: "/gatsby-advanced-starter", // Prefixes all links. For cases when deployed to example.github.io/gatsby-advanced-starter/.
+  siteUrl: "https://frt.netlify.com", // Domain of your website without pathPrefix.
   siteDescription: "BME Formula Racing Team Website", // Website description used for RSS feeds/meta description tag.
   siteRss: "/rss.xml", // Path to the RSS file.
   siteFBAppID: "1825356251115265", // FB Application ID for using app insights
