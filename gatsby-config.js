@@ -1,6 +1,6 @@
 const config = require("./data/SiteConfig");
 
-const pathPrefix = config.pathPrefix === "/" ? "" : config.pathPrefix;
+const pathPrefix = ""
 
 module.exports = {
   pathPrefix: config.pathPrefix,

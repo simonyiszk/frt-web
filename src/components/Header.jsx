@@ -60,7 +60,7 @@ export default class Header extends Component {
 	render() {
 		return (
 			<HeaderContainer>
-				<Link to="/">
+				<Link exact to="/">
 					<Home>
 						<img src={Logo} />
 					</Home>
