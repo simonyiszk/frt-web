@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { translate } from "react-i18next";
 
 import Num from "../images/number.svg";
 import Circle from "../images/Circle.svg"
@@ -64,7 +65,7 @@ const CarNumber = styled.h1`
   color: rgba(255, 255, 255, 0.3);
 `
 
-const CarDetail = ({id}) => (
+const CarDetail = ({id, t}) => (
 	<Wrapper id={id}>
           <TextSection>
           <article>
@@ -88,15 +89,15 @@ const CarDetail = ({id}) => (
               <CarContainer src={Car} />
               <StatsContainer>
                 <div>
-                  <h3>Tömeg:</h3>
+                  <h3>{t("weight")}</h3>
                   <h1>221 kg</h1>
                 </div>
                 <div>
-                  <h3>Gyorsulás (0-100 km/h):</h3>
+                  <h3>{t("acc")}</h3>
                   <h1>3.6 sec</h1>
                 </div>
                 <div>
-                  <h3>Végsebesség:</h3>
+                  <h3>{t("topsp")}</h3>
                   <h1>200+ km/h</h1>
                 </div>
               </StatsContainer>
@@ -105,4 +106,4 @@ const CarDetail = ({id}) => (
         </Wrapper>
 );
 
-export default CarDetail;
+export default translate("Cars")(CarDetail);

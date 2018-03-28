@@ -21,14 +21,10 @@ class LanguageSwitcher extends Component {
   }
 
   renderLanguageChoice({ code, label }) {
-    const buttonClass = classNames("LanguageSwitcher__button", {
-      "LanguageSwitcher__button--selected": this.state.language === code,
-    });
-
     return (
       <button
+        style={{color: "black"}}
         key={code}
-        className={buttonClass}
         onClick={() => this.handleChangeLanguage(code)}
       >
         {label}
@@ -38,8 +34,8 @@ class LanguageSwitcher extends Component {
 
   render() {
     const languages = [
-      { code: "en", label: "Magyar" },
-      { code: "hu", label: "English" },
+      { code: "en", label: "English" },
+      { code: "hu", label: "Magyar" },
     ];
 
     return (

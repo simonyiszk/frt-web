@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-
+import { translate } from "react-i18next";
 
 import Sample from "../../images/sample.png";
 import Icon from "../../images/accicon.png";
@@ -94,7 +94,7 @@ const accAttr = {
 }
 
 
-const RaceItem = ({imgURL, title, description, attributes}) => (
+const RaceItem = ({imgURL, title, description, attributes, t}) => (
   <RaceItemContainer>
     <Img src={imgURL}/>
     <div style={{width: "50%"}}>
@@ -115,8 +115,9 @@ const RaceItem = ({imgURL, title, description, attributes}) => (
   </RaceItemContainer>
 );
 
-export default class FormulaStudent extends React.Component {
+class FormulaStudent extends React.Component {
   render() {
+    const { t } = this.props;
     return (
     	<div>
           <Container>
@@ -141,12 +142,12 @@ export default class FormulaStudent extends React.Component {
              </IllustrationContainer>
           </Container>
           <RaceContainer>
-            <h1>Versenyszámok</h1>
-            <h2>Dinamikus</h2>
+            <h1>{t("entries")}</h1>
+            <h2>{t("dynamic")}</h2>
             <RaceItem imgURL={Icon} title="Gyorsulás" description={accDesc} attributes={accAttr} />
             <RaceItem imgURL={Icon} title="Gyorsulás" description={accDesc} attributes={accAttr} />
             <RaceItem imgURL={Icon} title="Gyorsulás" description={accDesc} attributes={accAttr} />
-            <h2>Statikus</h2>
+            <h2>{t("static")}</h2>
             <RaceItem imgURL={Icon} title="Gyorsulás" description={accDesc} />
             <RaceItem imgURL={Icon} title="Gyorsulás" description={accDesc} />
           </RaceContainer> 
@@ -155,4 +156,4 @@ export default class FormulaStudent extends React.Component {
   }
 }
 
-
+export default translate("FormulaStudent")(FormulaStudent);

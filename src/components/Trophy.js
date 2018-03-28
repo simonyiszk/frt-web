@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { translate } from "react-i18next";
 
 import Trophy from "../../images/trophy.png";
 
@@ -49,7 +50,7 @@ const DetailItem = styled.div`
 	margin: 5px;
 `
 
-const TrophyItem = ({data}) => (
+const TrophyItem = ({data, t}) => (
 	<TrophyContainer>
 		<TrophyTab>
 			<img src={Trophy} />
@@ -57,20 +58,20 @@ const TrophyItem = ({data}) => (
 			<p>{data["city"]}, {data["country"]}</p>
 		</TrophyTab>
 		<TrophyCenter>
-			<h3>Összetett</h3>
-			<h1>{data["helyezes"]}. hely</h1>
-			<p>({data["indulok"]} induló közül)</p>
+			<h3>{t("comp")}</h3>
+			<h1>{data["helyezes"]}. {t("place")}</h1>
+			<p>({data["indulok"]} {t("starters")})</p>
 		</TrophyCenter>
 		<TropyDetail>
 			{
 				Object.keys(data.details).map((item, index) => (
 					<DetailItem key={index}>
 						<h3>{item}:</h3>
-						<p>{data.details[item]}</p>
+						<p>{data.details[item]}. {t("place")}</p>
 					</DetailItem>
 					))}
 		</TropyDetail>		
 	</TrophyContainer>
 	)
 
-export default TrophyItem;
+export default translate("TropyItem")(TrophyItem);

@@ -89,11 +89,12 @@ export default class Cars extends React.Component {
     }
 
   render(){
+    const { t } = this.props;
     return (
       <div>
         <Wrapper>
           {this.state.sections.map((item, index) => (
-            <CarDetail key={index} id={index} />
+            <CarDetail key={index} id={index} t={t}/>
             ))}
         </Wrapper>
         <div style={{display: "flex", justifyContent: "center"}}>

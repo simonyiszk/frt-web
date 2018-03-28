@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { translate } from "react-i18next";
 
 const ContactContainer = styled.div`
 	display: flex;
@@ -38,12 +39,12 @@ const Container = styled.div`
 	justify-content: center;
 `
 
-const Contact = () => (
+const Contact = ({ t }) => (
 <Container>
 	<ContactContainer>
 		<Info>
 			<TextContainer>
-				<h1>Műhely:</h1>
+				<h1>{t("workshop")}:</h1>
 				<h3>1205, Budapest Hosszú utca 156.</h3>
 			</TextContainer>
 			<TextContainer>
@@ -56,4 +57,4 @@ const Contact = () => (
 </Container>
 )
 
-export default Contact;
+export default translate("About")(Contact);

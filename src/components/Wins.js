@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import styled from "styled-components";
+import { translate } from "react-i18next";
 
 import TrophyItem from "../components/Trophy";
 
@@ -82,12 +83,12 @@ const sampleRace = {
 	"helyezes": 1,
 	"indulok": 44,
 	"details": {
-		"Acceleration": "X.hely",
-		"Cost & Manufacturing":"X. hely",
-		"Efficiency":"X. hely",
-		"Skid Pad":"X. hely",
-		"Endurance":"X. hely",
-		"Auto cross":"X. hely",
+		"Acceleration": 1,
+		"Cost & Manufacturing": 1,
+		"Efficiency": 1,
+		"Skid Pad": 1,
+		"Endurance": 1,
+		"Auto cross": 1,
 	}
 }
 

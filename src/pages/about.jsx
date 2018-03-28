@@ -29,34 +29,39 @@ const Ul = styled.ul`
 `
 
 export default class About extends React.Component {
-	state = {shown: "FormulaStudent"} // | Wins | Teams | AboutUs
+	state = {									/* | Wins | Teams | AboutUs */
+		shown: location.hash === "" ? "#FormulaStudent" : location.hash,
+	}
+
 	show = (what) => {
 		this.setState(p => ({
 			shown: what,
 		}))
 	}
+
   render = () => {
+		const { t } = this.props;
     return (
       <Container>
       		<Ul>
-      			<li><a href="#FormulaStudent" onClick={()=>this.show("FormulaStudent")}>Formula Student</a></li>
-      			<li><a href="#AboutUs" onClick={()=>this.show("AboutUs")}>Formula Racing Team</a></li>
-      			<li><a href="#Wins" onClick={()=>this.show("Wins")}>Versenyeink</a></li>
-      			<li><a href="#Teams" onClick={()=>this.show("Teams")}>A csapat</a></li>
+      			<li><a href="#FormulaStudent" onClick={()=>this.show("#FormulaStudent")}>Formula Student</a></li>
+      			<li><a href="#AboutUs" onClick={()=>this.show("#AboutUs")}>Formula Racing Team</a></li>
+      			<li><a href="#Wins" onClick={()=>this.show("#Wins")}>Versenyeink</a></li>
+      			<li><a href="#Teams" onClick={()=>this.show("#Teams")}>A csapat</a></li>
       		</Ul>
         {(() => {
         	switch(this.state.shown){
-        		case "FormulaStudent":
-        			return <FormulaStudent />;
-        		case "AboutUs":
-        			return <AboutUs />;
-        		case "Wins":
-        			return <Wins />;
-        		case "Teams":
-        			return <Teams />;
-        		default:
-        			return <AboutUs />
-        		}
+						case "#FormulaStudent":
+							return <FormulaStudent t={ t }/>;
+						case "#AboutUs":
+							return <AboutUs t={ t }/>;
+						case "#Wins":
+							return <Wins t={ t }/>;
+						case "#Teams":
+							return <Teams t={ t }/>;
+						default:
+							return <AboutUs t={ t }/>
+						}
         	})()
 
         }
