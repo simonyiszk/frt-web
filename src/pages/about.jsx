@@ -30,7 +30,12 @@ const Ul = styled.ul`
 
 export default class About extends React.Component {
 	state = {									/* | Wins | Teams | AboutUs */
-		shown: "#FormulaStudent",
+		shown: null,
+	}
+
+	componentDidMount = () => {
+		if (location !== undefined)
+			this.setState({ shown: location.hash === "" ? "#FormulaStudent" : location.hash });
 	}
 
 	show = (what) => {
