@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 
+import LanguageSwitcher from "./LanguageSwitcher";
+
 import Fb from '../images/Facebook.svg';
 import Insta from '../images/Instagram.svg';
 import Mail from '../images/Mail.svg';
@@ -55,8 +57,8 @@ export default class Footer extends Component {
               <Img src={YouTube} />
             </A>
           </Links>
-
           <Praise>
+            <LanguageSwitcher />
             <a href="http://schdesign.hu" target="_blank">Designed for 🏎 by SCHDesign</a><a target="_blank" href="https://youtu.be/4LfJnj66HVQ?t=17s">.</a>
           </Praise>
         </Container>

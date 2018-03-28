@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Link from 'gatsby-link';
 import styled from "styled-components";
+import { translate } from "react-i18next";
 
 import Logo from "../images/frt_logo.svg";
 
@@ -56,8 +57,9 @@ const Ul = styled.ul`
 	justif-content: space-between;
 `
 
-export default class Header extends Component {
+class Header extends Component {
 	render() {
+		const { t } = this.props;
 		return (
 			<HeaderContainer>
 				<Link exact to="/">
@@ -67,11 +69,11 @@ export default class Header extends Component {
 				</Link>
 				<Nav>
 					<Ul>
-						<Li><Link to="/news/">Hírek</Link></Li>
-						<Li><Link to="/about/">Rólunk</Link></Li>
-						<SelectedLi><Link to="/cars/">Autók</Link></SelectedLi>
-						<Li><Link to="/sponsors/">Szponzoraink</Link></Li>
-						<Li><Link to="/contact/">Kapcsolat</Link></Li>
+						<Li><Link to="/news/">{t("news")}</Link></Li>
+						<Li><Link to="/about/">{t("about")}</Link></Li>
+						<SelectedLi><Link to="/cars/">{t("cars")}</Link></SelectedLi>
+						<Li><Link to="/sponsors/">{t("sponsors")}</Link></Li>
+						<Li><Link to="/contact/">{t("contact")}</Link></Li>
 					</Ul>
 				</Nav>
 			</HeaderContainer>
@@ -79,4 +81,4 @@ export default class Header extends Component {
 	}
 }
 
-/*<Li><Link to="/gallery/">Galléria</Link></Li>*/
+export default translate("NavBar")(Header);

@@ -1,6 +1,8 @@
 const path = require("path");
 const _ = require("lodash");
+const fs = require("fs-extra");
 const webpackLodashPlugin = require("lodash-webpack-plugin");
+
 
 exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
   const { createNodeField } = boundActionCreators;
