@@ -14,10 +14,9 @@ i18n
     ns: [""],
     defaultNS: "",
 
-    debug: true,
+    debug: false,
 
     interpolation: {
-      escapeValue: false, // not needed for react!!
     },
 
     react: {
