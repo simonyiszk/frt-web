@@ -7,10 +7,24 @@
 
   <!-- Include the styles for the Netlify CMS UI, after your own styles -->
   <link rel="stylesheet" href="https://unpkg.com/netlify-cms@^1.0.0/dist/cms.css" />
-
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 <body>
   <!-- Include the script that builds the page and powers Netlify CMS -->
   <script src="https://unpkg.com/netlify-cms@^1.0.0/dist/cms.js"></script>
+  <script>
+    if (window.netlifyIdentity) {
+      alert("netlifyIdentity");
+      window.netlifyIdentity.on("init", function(user) {
+        alert("init");
+        if (!user) {
+          window.netlifyIdentity.on("login", function(user){
+            alert("login");
+            document.location.href = "/admin/";
+          });
+        }
+      });
+    }
+  </script>
 </body>
 </html>
