@@ -8,14 +8,18 @@ const todos =
         "további teendők vázolása a körben",
         "reszponzivitás",
         'paypal integration',
+        "why support us",
     ]
 
-const design = [
-    "page navigation",
-    "szponzorok - több látsszon egy képernyőn",
-    "logó - piros aláhúzás nem kell",
-    "betűtípus csere",
-    
+    const design = [
+        "page navigation",
+        "szponzorok - több látsszon egy képernyőn",
+        "logó - piros aláhúzás nem kell",
+        "betűtípus csere",
+    ]
+
+    const temp = [
+        "adó egy százaléka"
     ]
 
 export default todos;

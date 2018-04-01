@@ -12,7 +12,9 @@ const Button = styled.button`
   background-color: Transparent;
   border: none;
   cursor: pointer;
-  font-size: 2rem;
+  font-size: 1.5rem;
+  color: #000;
+  text-decoration: underline;
 `
 
 class LanguageSwitcher extends Component {
@@ -40,15 +42,15 @@ class LanguageSwitcher extends Component {
         key={code}
         onClick={() => this.handleChangeLanguage(code)}
       >
-        {label}
+        <span>{label}</span>
       </Button>
     );
   }
 
   render() {
     const languages = [
-      { code: "en", label: "🇺🇸" },
-      { code: "hu", label: "🇭🇺" },
+      { code: "en", label: "EN" },
+      { code: "hu", label: "HU" },
     ];
 
     return (

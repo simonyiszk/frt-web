@@ -1,0 +1,45 @@
+news:
+    date
+    title
+    picture
+    body
+
+race:
+    helyezés
+    indulók
+    acc
+    c&m
+    skidpad
+    endu
+    autocross
+
+team members:
+    leader:
+        first name
+        last name
+        e-mail
+        post
+        photo
+    member:
+        first name
+        last name
+
+cars:
+    name
+    description
+    number
+    acc
+    topsp
+    weight
+
+sponsor:
+    name
+    image
+    link
+
+race entries:
+    name
+    description
+    track_len
+    time
+    best_time
