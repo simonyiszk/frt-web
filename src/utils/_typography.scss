@@ -1,0 +1,14 @@
+$fonts: (
+  display: (
+    font-family: unquote("'Rajdhani', sans-serif"),
+  ),
+  body: (
+    font-family: unquote("'Raleway', sans-serif"),
+  ),
+);
+
+@mixin font($type) {
+  @each $key, $value in map-get($fonts, $type) {
+    #{$key}: #{$value};
+  }
+}
