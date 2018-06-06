@@ -3,21 +3,33 @@ import React from 'react';
 import Container from './Container';
 import styles from './Card.module.scss';
 
-const Card = ({ media, children, className, ...props }) => (
+const Card = ({
+  children,
+  imageSrc,
+  imageDescription,
+  className,
+  ...props
+}) => (
   <div className={`${styles.root} ${className}`} {...props}>
-    <div className={styles.media}>{media}</div>
+    <div
+      alt={imageDescription}
+      className={styles.media}
+      style={{ backgroundImage: `url(${imageSrc})` }}
+    />
     <Container fluid>{children}</Container>
   </div>
 );
 
 Card.propTypes = {
-  media: PropTypes.node,
   children: PropTypes.node.isRequired,
+  imageSrc: PropTypes.string,
+  imageDescription: PropTypes.string,
   className: PropTypes.string,
 };
 
 Card.defaultProps = {
-  media: undefined,
+  imageSrc: '',
+  imageDescription: '',
   className: '',
 };
 
