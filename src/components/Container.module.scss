@@ -3,7 +3,9 @@
 .root {
   padding: 0 1rem;
   margin: 0 auto;
+}
 
+.nonFluid {
   @include media-breakpoint-up(md) {
     margin: 0 8vw;
   }
