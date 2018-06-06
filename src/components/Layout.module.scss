@@ -14,7 +14,7 @@ body {
   @include theme(dark);
   @include font(body);
 
-  line-height: 1.5;
+  line-height: 1.75;
   overflow-x: hidden;
 
   @include media-breakpoint-up(md) {
@@ -48,6 +48,15 @@ a {
       text-decoration: underline;
     }
   }
+}
+
+blockquote {
+  padding: 0 1em;
+  border-left: 0.25em solid $color-primary;
+  margin-right: 0;
+  margin-left: 0;
+  font-size: 1.25em;
+  font-style: italic;
 }
 
 .headerBrandLogo {
