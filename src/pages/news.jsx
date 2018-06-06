@@ -11,7 +11,7 @@ const NewsPage = ({ data }) => (
   <Layout>
     <Container>
       {data.allMarkdownRemark.edges.map(({ node }) => (
-        <Article className={styles.newsItem}>
+        <Article key={node.fields.slug} className={styles.newsItem}>
           <Link to={node.fields.slug} className={styles.newsItemLink}>
             <Card
               imageSrc={node.frontmatter.image}
@@ -47,7 +47,6 @@ export const query = graphql`
     ) {
       edges {
         node {
-          id
           frontmatter {
             title
             date
