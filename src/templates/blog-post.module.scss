@@ -1,0 +1,25 @@
+@import '../utils/typography';
+
+.post {
+  max-width: 40em;
+  margin: 0 auto;
+
+  img {
+    max-width: 100%;
+    margin: 0.5em 0;
+  }
+}
+
+.title {
+  margin-bottom: 0;
+}
+
+.date {
+  @include font(display);
+
+  font-style: italic;
+}
+
+.coverImage {
+  width: 100%;
+}
