@@ -4,9 +4,10 @@
 @import '../utils/typography';
 
 .root {
-  padding: 0.5em 0;
-
   @include font(display);
+
+  padding: 0.5em 0;
+  background: black;
 }
 
 .contentContainer {
@@ -16,7 +17,7 @@
 
   @include gap(0.5em);
 
-  @include media-breakpoint-up(md) {
+  @include media-breakpoint-up(lg) {
     flex-direction: row;
   }
 }
