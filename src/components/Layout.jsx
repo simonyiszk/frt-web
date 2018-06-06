@@ -42,6 +42,7 @@ const Layout = ({ children }) => (
                 className={styles.headerBrandLogo}
               />
             }
+            className={styles.header}
           />
         </React.Fragment>
       )}

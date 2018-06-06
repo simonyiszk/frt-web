@@ -38,15 +38,17 @@ h6 {
 }
 
 a {
-  color: inherit;
+  color: $color-link;
   text-decoration: none;
 
-  .main & {
-    color: $color-link;
+  &:focus,
+  &:hover {
+    text-decoration: underline;
+  }
 
-    &:not(:hover) {
-      text-decoration: underline;
-    }
+  .header & {
+    color: inherit;
+    text-decoration: none;
   }
 }
 
