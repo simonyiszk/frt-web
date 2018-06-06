@@ -1,0 +1,17 @@
+@import '../utils/typography';
+
+.newsItemLink {
+  color: inherit;
+
+  &:focus,
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.date {
+  @include font(display);
+
+  font-style: italic;
+  text-align: right;
+}
