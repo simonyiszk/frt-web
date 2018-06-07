@@ -3,8 +3,6 @@
 @import '../utils/flexbox';
 @import '../utils/typography';
 
-$menu-item-horizontal-margins: 1em;
-
 .root {
   @include font(display);
 
@@ -43,18 +41,18 @@ $menu-item-horizontal-margins: 1em;
   display: flex;
   justify-content: space-between;
   padding: 0;
+  margin: 0;
   list-style-type: none;
+}
 
-  @include gap(0);
-
-  @include media-breakpoint-up(lg) {
-    margin: 0 -#{$menu-item-horizontal-margins};
+.menuItem {
+  &:not(:first-child) {
+    margin-left: 2em;
   }
 }
 
 .menuItemLink {
   padding: 0.5em 0;
-  margin: 0 $menu-item-horizontal-margins;
   opacity: $opacity-light;
 
   &:focus,

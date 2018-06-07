@@ -29,7 +29,7 @@ const Header = ({ brand, className, ...props }) => (
               `}
               render={staticData =>
                 staticData.allHeaderMenuItemsYaml.edges.map(({ node }) => (
-                  <li key={node.url}>
+                  <li key={node.url} className={styles.menuItem}>
                     <Link to={node.url} className={styles.menuItemLink}>
                       {node.label}
                     </Link>
