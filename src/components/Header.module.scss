@@ -3,6 +3,8 @@
 @import '../utils/flexbox';
 @import '../utils/typography';
 
+$menu-item-horizontal-margins: 1em;
+
 .root {
   @include font(display);
 
@@ -27,21 +29,32 @@
 }
 
 .menuContainer {
+  max-width: 100%;
   flex: 5;
+  -webkit-overflow-scrolling: touch;
+  overflow-x: auto;
+
+  @include media-breakpoint-up(md) {
+    overflow-x: visible;
+  }
 }
 
 .menuItemsList {
   display: flex;
   justify-content: space-between;
-
-  @include gap(0 2em);
-
   padding: 0;
   list-style-type: none;
+
+  @include gap(0);
+
+  @include media-breakpoint-up(lg) {
+    margin: 0 -#{$menu-item-horizontal-margins};
+  }
 }
 
 .menuItemLink {
   padding: 0.5em 0;
+  margin: 0 $menu-item-horizontal-margins;
   opacity: $opacity-light;
 
   &:focus,
