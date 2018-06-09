@@ -29,32 +29,32 @@ const Footer = ({ ...props }) => (
         `}
         render={staticData => (
           <div className={styles.iconsContainer}>
-            <a href={staticData.site.siteMetadata.siteFacebookURL}>
-              <CircledFontAwesomeIcon
-                icon={faFacebookF}
-                className={styles.icon}
-              />
+            <a
+              href={staticData.site.siteMetadata.siteFacebookURL}
+              className={styles.iconLink}
+            >
+              <CircledFontAwesomeIcon icon={faFacebookF} />
             </a>
 
-            <a href={staticData.site.siteMetadata.siteInstagramURL}>
-              <CircledFontAwesomeIcon
-                icon={faInstagram}
-                className={styles.icon}
-              />
+            <a
+              href={staticData.site.siteMetadata.siteInstagramURL}
+              className={styles.iconLink}
+            >
+              <CircledFontAwesomeIcon icon={faInstagram} />
             </a>
 
-            <a href={staticData.site.siteMetadata.siteYouTubeURL}>
-              <CircledFontAwesomeIcon
-                icon={faYoutube}
-                className={styles.icon}
-              />
+            <a
+              href={staticData.site.siteMetadata.siteYouTubeURL}
+              className={styles.iconLink}
+            >
+              <CircledFontAwesomeIcon icon={faYoutube} />
             </a>
 
-            <a href={staticData.site.siteMetadata.siteEmailURL}>
-              <CircledFontAwesomeIcon
-                icon={faEnvelope}
-                className={styles.icon}
-              />
+            <a
+              href={staticData.site.siteMetadata.siteEmailURL}
+              className={styles.iconLink}
+            >
+              <CircledFontAwesomeIcon icon={faEnvelope} />
             </a>
           </div>
         )}
