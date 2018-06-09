@@ -7,8 +7,8 @@ import {
 import { faCircle, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import React from 'react';
 
-const Footer = () => (
-  <footer>
+const Footer = ({ ...props }) => (
+  <footer {...props}>
     <FontAwesomeIcon icon={faFacebookF} transform="shrink-8" mask={faCircle} />
     <FontAwesomeIcon icon={faInstagram} transform="shrink-8" mask={faCircle} />
     <FontAwesomeIcon icon={faYoutube} transform="shrink-8" mask={faCircle} />

@@ -3,13 +3,6 @@
 @import '../utils/flexbox';
 @import '../utils/typography';
 
-.root {
-  @include font(display);
-
-  padding: 0.5em 0;
-  background: black;
-}
-
 .contentContainer {
   display: flex;
   flex-direction: column;

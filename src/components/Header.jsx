@@ -4,8 +4,8 @@ import React from 'react';
 import Container from './Container';
 import styles from './Header.module.scss';
 
-const Header = ({ brand, className, ...props }) => (
-  <header className={`${styles.root} ${className}`} {...props}>
+const Header = ({ brand, ...props }) => (
+  <header {...props}>
     <Container>
       <div className={styles.contentContainer}>
         <div className={styles.brandContainer}>
@@ -46,11 +46,6 @@ const Header = ({ brand, className, ...props }) => (
 
 Header.propTypes = {
   brand: PropTypes.node.isRequired,
-  className: PropTypes.string,
-};
-
-Header.defaultProps = {
-  className: '',
 };
 
 export default Header;

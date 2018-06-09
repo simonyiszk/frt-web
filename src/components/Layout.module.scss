@@ -73,6 +73,14 @@ blockquote {
   flex-direction: column;
 }
 
+.header,
+.footer {
+  @include font(display);
+
+  padding: 0.5em 0;
+  background: black;
+}
+
 .header {
   position: sticky;
   top: 0;
