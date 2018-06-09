@@ -40,7 +40,9 @@
 
 .menuItem {
   &:not(:first-child) {
-    margin-left: 2em;
+    padding-left: 1em;
+    border-left: 1px solid $color-primary;
+    margin-left: 1em;
   }
 }
 
