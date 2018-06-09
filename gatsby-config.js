@@ -2,6 +2,10 @@ module.exports = {
   siteMetadata: {
     title: 'BME Formula Racing Team',
     language: 'hu',
+    siteFacebookURL: 'https://www.facebook.com/FormulaRacingTeam/',
+    siteInstagramURL: 'https://www.instagram.com/bme_formularacingteam/',
+    siteYouTubeURL: 'https://www.youtube.com/user/bmeFRT/',
+    siteEmailURL: 'mailto:info.bme.frt@gmail.com',
   },
   plugins: [
     {
