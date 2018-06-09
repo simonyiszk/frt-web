@@ -46,7 +46,8 @@ a {
     text-decoration: underline;
   }
 
-  .header & {
+  .header &,
+  .footer & {
     color: inherit;
     text-decoration: none;
   }
