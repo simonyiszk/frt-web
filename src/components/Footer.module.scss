@@ -1,10 +1,21 @@
+@import '../utils/breakpoints';
 @import '../utils/colors';
 @import '../utils/flexbox';
+
+.contentContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  @include media-breakpoint-up(md) {
+    flex-direction: row;
+  }
+}
 
 .iconsContainer {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   font-size: 2em;
 
   @include gap(0 0.5em);
@@ -12,10 +23,19 @@
 
 .iconLink {
   clip-path: circle(50% at 50% 50%);
+}
+
+.iconLink,
+.designerLink {
   opacity: $opacity-light;
 
   &:focus,
   &:hover {
     opacity: $opacity-default;
   }
+}
+
+.designerLogo {
+  height: 1.1em;
+  vertical-align: text-bottom;
 }

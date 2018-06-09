@@ -7,13 +7,14 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { StaticQuery } from 'gatsby';
 import PropTypes from 'prop-types';
 import React from 'react';
+import schdesignLogoSrc from '../assets/schdesign-logo.svg';
 import CircledFontAwesomeIcon from './CircledFontAwesomeIcon';
 import Container from './Container';
 import styles from './Footer.module.scss';
 
 const Footer = ({ ...props }) => (
   <footer {...props}>
-    <Container>
+    <Container className={styles.contentContainer}>
       <StaticQuery
         query={graphql`
           query FooterQuery {
@@ -59,6 +60,15 @@ const Footer = ({ ...props }) => (
           </div>
         )}
       />
+
+      <a href="http://schdesign.hu" className={styles.designerLink}>
+        Designed by{' '}
+        <img
+          src={schdesignLogoSrc}
+          alt="schdesign"
+          className={styles.designerLogo}
+        />
+      </a>
     </Container>
   </footer>
 );
