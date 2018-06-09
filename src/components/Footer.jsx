@@ -33,6 +33,7 @@ const Footer = ({ ...props }) => (
             <a
               href={staticData.site.siteMetadata.siteFacebookURL}
               className={styles.iconLink}
+              aria-label="Facebook"
             >
               <CircledFontAwesomeIcon icon={faFacebookF} />
             </a>
@@ -40,6 +41,7 @@ const Footer = ({ ...props }) => (
             <a
               href={staticData.site.siteMetadata.siteInstagramURL}
               className={styles.iconLink}
+              aria-label="Instagram"
             >
               <CircledFontAwesomeIcon icon={faInstagram} />
             </a>
@@ -47,6 +49,7 @@ const Footer = ({ ...props }) => (
             <a
               href={staticData.site.siteMetadata.siteYouTubeURL}
               className={styles.iconLink}
+              aria-label="YouTube"
             >
               <CircledFontAwesomeIcon icon={faYoutube} />
             </a>
@@ -54,6 +57,7 @@ const Footer = ({ ...props }) => (
             <a
               href={staticData.site.siteMetadata.siteEmailURL}
               className={styles.iconLink}
+              aria-label="E-mail"
             >
               <CircledFontAwesomeIcon icon={faEnvelope} />
             </a>
