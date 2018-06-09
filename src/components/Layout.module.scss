@@ -10,6 +10,22 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 
+body {
+  @include theme(dark);
+  @include font(body);
+
+  line-height: 1.75;
+  overflow-x: hidden;
+
+  @include media-breakpoint-up(md) {
+    font-size: 1.25em;
+  }
+
+  @include media-breakpoint-up(xl) {
+    font-size: 1.5em;
+  }
+}
+
 body,
 .header,
 .footer {
@@ -59,22 +75,9 @@ blockquote {
 }
 
 .root {
-  @include theme(dark);
-  @include font(body);
-
   display: flex;
   min-height: 100vh;
   flex-direction: column;
-  line-height: 1.75;
-  overflow-x: hidden;
-
-  @include media-breakpoint-up(md) {
-    font-size: 1.25em;
-  }
-
-  @include media-breakpoint-up(xl) {
-    font-size: 1.5em;
-  }
 }
 
 .header,
@@ -97,4 +100,5 @@ blockquote {
 
 .main {
   flex: 1;
+  background: map-get(map-get($themes, dark), background);
 }
