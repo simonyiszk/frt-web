@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import Helmet from 'react-helmet';
 import FRTLogoSrc from '../assets/frt-logo.svg';
+import Footer from './Footer';
 import Header from './Header';
 import styles from './Layout.module.scss';
 
@@ -49,6 +50,8 @@ const Layout = ({ children }) => (
     />
 
     <main className={styles.main}>{children}</main>
+
+    <Footer />
   </React.Fragment>
 );
 
