@@ -1,12 +1,11 @@
 import React from 'react';
-import Article from '../components/Article';
 import Container from '../components/Container';
 import Layout from '../components/Layout';
 
 const IndexPage = () => (
   <Layout>
     <Container>
-      <Article>
+      <article>
         <h1>Formula Student</h1>
 
         <h2>Mi is a Formula Student?</h2>
@@ -57,7 +56,7 @@ const IndexPage = () => (
           nem elég egyetlen területen jól szerepelniük, kiegyensúlyozottan jól
           kell teljesíteniük a verseny egészén az eredményes szerepléshez.
         </p>
-      </Article>
+      </article>
     </Container>
   </Layout>
 );

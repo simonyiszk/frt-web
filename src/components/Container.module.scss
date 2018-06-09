@@ -6,11 +6,5 @@
 }
 
 .nonFluid {
-  @include media-breakpoint-up(md) {
-    margin: 0 8vw;
-  }
-
-  @include media-breakpoint-up(xl) {
-    margin: 0 16vw;
-  }
+  max-width: 40em;
 }
