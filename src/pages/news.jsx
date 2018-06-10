@@ -1,6 +1,7 @@
 import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
 import React from 'react';
+import Article from '../components/Article';
 import Card from '../components/Card';
 import Container from '../components/Container';
 import Layout from '../components/Layout';
@@ -10,7 +11,7 @@ const NewsPage = ({ data }) => (
   <Layout>
     <Container>
       {data.allMarkdownRemark.edges.map(({ node }) => (
-        <article key={node.fields.slug} className={styles.newsItem}>
+        <Article key={node.fields.slug} className={styles.newsItem}>
           <Link to={node.fields.slug} className={styles.newsItemLink}>
             <Card
               imageSrc={node.frontmatter.image}
@@ -26,7 +27,7 @@ const NewsPage = ({ data }) => (
               </p>
             </Card>
           </Link>
-        </article>
+        </Article>
       ))}
     </Container>
   </Layout>
