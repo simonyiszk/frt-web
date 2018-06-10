@@ -6,7 +6,7 @@ import styles from './Header.module.scss';
 
 const Header = ({ brand, ...props }) => (
   <header {...props}>
-    <Container>
+    <Container fluid>
       <div className={styles.contentContainer}>
         <div className={styles.brandContainer}>
           <Link to="/">{brand}</Link>
