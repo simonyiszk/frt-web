@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types';
 import React from 'react';
-import Container from './Container';
 import styles from './Card.module.scss';
 
 const Card = ({
@@ -11,12 +10,7 @@ const Card = ({
   ...props
 }) => (
   <div className={`${styles.root} ${className}`} {...props}>
-    <div
-      alt={imageDescription}
-      className={styles.media}
-      style={{ backgroundImage: `url(${imageSrc})` }}
-    />
-    <Container fluid>{children}</Container>
+    {children}
   </div>
 );
 

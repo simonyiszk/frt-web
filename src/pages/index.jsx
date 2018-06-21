@@ -7,11 +7,11 @@ import NewsSection from '../components/NewsSection';
 const IndexPage = () => (
   <Layout>
     <Container>
-      <Article>
+      <article>
         <NewsSection />
-      </Article>
+      </article>
 
-      <Article>
+      <article>
         <h1>Formula Student</h1>
 
         <h2>Mi is a Formula Student?</h2>
@@ -62,7 +62,7 @@ const IndexPage = () => (
           nem elég egyetlen területen jól szerepelniük, kiegyensúlyozottan jól
           kell teljesíteniük a verseny egészén az eredményes szerepléshez.
         </p>
-      </Article>
+      </article>
     </Container>
   </Layout>
 );

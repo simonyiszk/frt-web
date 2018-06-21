@@ -1,6 +1,8 @@
 import { graphql, Link, StaticQuery } from 'gatsby';
 import React from 'react';
 import Card from '../components/Card';
+import CardImage from '../components/CardImage';
+import Container from '../components/Container';
 import styles from './NewsSection.module.scss';
 
 const NewsSection = () => (
@@ -37,18 +39,22 @@ const NewsSection = () => (
         staticData.allMarkdownRemark.edges.map(({ node }) => (
           <article key={node.fields.slug} className={styles.newsItem}>
             <Link to={node.fields.slug} className={styles.newsItemLink}>
-              <Card
-                imageSrc={node.frontmatter.image}
-                imageDescription={node.frontmatter.imageDescription}
-              >
-                <h2>{node.frontmatter.title}</h2>
-                <p>{node.frontmatter.abstract || node.excerpt}</p>
+              <Card>
+                <CardImage
+                  src={node.frontmatter.image}
+                  alt={node.frontmatter.imageDescription}
+                />
 
-                <p className={styles.date}>
-                  <time dateTime={node.frontmatter.date}>
-                    {node.frontmatter.dateString}
-                  </time>
-                </p>
+                <Container fluid>
+                  <h2>{node.frontmatter.title}</h2>
+                  <p>{node.frontmatter.abstract || node.excerpt}</p>
+
+                  <p className={styles.date}>
+                    <time dateTime={node.frontmatter.date}>
+                      {node.frontmatter.dateString}
+                    </time>
+                  </p>
+                </Container>
               </Card>
             </Link>
           </article>

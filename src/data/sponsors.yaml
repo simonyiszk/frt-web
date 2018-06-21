@@ -3,28 +3,28 @@
     - name: "Audi Hungaria"
       website: "https://audi.hu/"
       logo:
-        image: "../../static/assets/uploads/audi-hungaria-logo.svg"
+        image: "/assets/uploads/audi-hungaria-logo.svg"
 - category: "Arany szintű támogatóink"
   organizations:
     - name: "Audi Hungaria"
       website: "https://audi.hu/"
       logo:
-        image: "../../static/assets/uploads/audi-hungaria-logo.svg"
+        image: "/assets/uploads/audi-hungaria-logo.svg"
 - category: "Ezüst szintű támogatóink"
   organizations:
     - name: "Audi Hungaria"
       website: "https://audi.hu/"
       logo:
-        image: "../../static/assets/uploads/audi-hungaria-logo.svg"
+        image: "/assets/uploads/audi-hungaria-logo.svg"
 - category: "Bronz szintű támogatóink"
   organizations:
     - name: "Audi Hungaria"
       website: "https://audi.hu/"
       logo:
-        image: "../../static/assets/uploads/audi-hungaria-logo.svg"
+        image: "/assets/uploads/audi-hungaria-logo.svg"
 - category: "További támogatóink"
   organizations:
     - name: "Audi Hungaria"
       website: "https://audi.hu/"
       logo:
-        image: "../../static/assets/uploads/audi-hungaria-logo.svg"
+        image: "/assets/uploads/audi-hungaria-logo.svg"

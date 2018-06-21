@@ -1,7 +1,6 @@
 import { graphql } from 'gatsby';
 import PropTypes from 'prop-types';
 import React from 'react';
-import Article from '../components/Article';
 import Container from '../components/Container';
 import Layout from '../components/Layout';
 import styles from './blog-post.module.scss';
@@ -12,7 +11,7 @@ const BlogPostTemplate = ({ data }) => {
   return (
     <Layout>
       <Container>
-        <Article>
+        <article>
           <h1 className={styles.title}>{post.frontmatter.title}</h1>
           <p>
             <time dateTime={post.frontmatter.date} className={styles.date}>
@@ -30,7 +29,7 @@ const BlogPostTemplate = ({ data }) => {
             // eslint-disable-next-line react/no-danger
             dangerouslySetInnerHTML={{ __html: post.html }}
           />
-        </Article>
+        </article>
       </Container>
     </Layout>
   );
