@@ -40,6 +40,7 @@ const SponsorsPage = () => (
                     <img
                       src={organization.logo.image}
                       alt=""
+                      className={styles.sponsorLogoImage}
                       style={{ height: organization.logo.height }}
                     />
                   </Container>
