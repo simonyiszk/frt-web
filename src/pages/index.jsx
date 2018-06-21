@@ -1,5 +1,4 @@
 import React from 'react';
-import Article from '../components/Article';
 import Container from '../components/Container';
 import Layout from '../components/Layout';
 import NewsSection from '../components/NewsSection';
