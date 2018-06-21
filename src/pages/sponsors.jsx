@@ -3,6 +3,7 @@ import React from 'react';
 import Card from '../components/Card';
 import Container from '../components/Container';
 import Layout from '../components/Layout';
+import styles from './sponsors.module.scss';
 
 const SponsorsPage = () => (
   <Layout>
@@ -15,9 +16,11 @@ const SponsorsPage = () => (
                 category
                 organizations {
                   name
+                  description
                   website
                   logo {
                     image
+                    height
                   }
                 }
               }
@@ -31,9 +34,22 @@ const SponsorsPage = () => (
             <h1>{node.category}</h1>
 
             {node.organizations.map(organization => (
-              <a href={organization.website}>
+              <a href={organization.website} className={styles.sponsorLink}>
                 <Card imageSrc={organization.logo.image}>
-                  <h2>{organization.name}</h2>
+                  <Container fluid className={styles.sponsorLogoContainer}>
+                    <img
+                      src={organization.logo.image}
+                      alt=""
+                      style={{ height: organization.logo.height }}
+                    />
+                  </Container>
+
+                  <Container fluid>
+                    <h2 className={styles.sponsorName}>{organization.name}</h2>
+                    {organization.description && (
+                      <p>{organization.description}</p>
+                    )}
+                  </Container>
                 </Card>
               </a>
             ))}

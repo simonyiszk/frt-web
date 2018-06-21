@@ -1,0 +1,20 @@
+.sponsorLink {
+  color: inherit;
+
+  &:focus,
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.sponsorLogoContainer {
+  display: flex;
+  height: 16em;
+  align-items: center;
+  justify-content: center;
+  background: white;
+}
+
+.sponsorName {
+  text-align: center;
+}

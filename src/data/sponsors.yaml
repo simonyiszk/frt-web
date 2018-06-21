@@ -1,30 +1,36 @@
 - category: "Gyémánt szintű támogatóink"
   organizations:
     - name: "Audi Hungaria"
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
       website: "https://audi.hu/"
       logo:
         image: "/assets/uploads/audi-hungaria-logo.svg"
+        height: 8em
 - category: "Arany szintű támogatóink"
   organizations:
     - name: "Audi Hungaria"
       website: "https://audi.hu/"
       logo:
         image: "/assets/uploads/audi-hungaria-logo.svg"
+        height: 8em
 - category: "Ezüst szintű támogatóink"
   organizations:
     - name: "Audi Hungaria"
       website: "https://audi.hu/"
       logo:
         image: "/assets/uploads/audi-hungaria-logo.svg"
+        height: 8em
 - category: "Bronz szintű támogatóink"
   organizations:
     - name: "Audi Hungaria"
       website: "https://audi.hu/"
       logo:
         image: "/assets/uploads/audi-hungaria-logo.svg"
+        height: 8em
 - category: "További támogatóink"
   organizations:
     - name: "Audi Hungaria"
       website: "https://audi.hu/"
       logo:
         image: "/assets/uploads/audi-hungaria-logo.svg"
+        height: 8em
