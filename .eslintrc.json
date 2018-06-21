@@ -4,9 +4,6 @@
   "env": {
     "browser": true
   },
-  "globals": {
-    "graphql": true
-  },
   "rules": {
     "jsx-a11y/anchor-is-valid": [
       "error",

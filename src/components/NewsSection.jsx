@@ -1,4 +1,4 @@
-import { Link, StaticQuery } from 'gatsby';
+import { graphql, Link, StaticQuery } from 'gatsby';
 import React from 'react';
 import Card from '../components/Card';
 import styles from './NewsSection.module.scss';

@@ -4,7 +4,7 @@ import {
   faYoutube,
 } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import { StaticQuery } from 'gatsby';
+import { graphql, StaticQuery } from 'gatsby';
 import PropTypes from 'prop-types';
 import React from 'react';
 import schdesignLogoSrc from '../assets/schdesign-logo.svg';
