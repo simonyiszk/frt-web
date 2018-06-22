@@ -1,8 +1,8 @@
 import { graphql, Link, StaticQuery } from 'gatsby';
 import React from 'react';
-import Card from '../components/Card';
-import CardImage from '../components/CardImage';
-import Container from '../components/Container';
+import Card from './Card';
+import CardImage from './CardImage';
+import Container from './Container';
 import styles from './NewsSection.module.scss';
 
 const NewsSection = () => (
