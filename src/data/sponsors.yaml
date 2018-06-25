@@ -122,11 +122,6 @@
       logo:
         image: "/assets/uploads/audi-hungaria-logo.svg"
         height: 8em
-    - name: "Audi Hungaria"
-      website: "https://audi.hu/"
-      logo:
-        image: "/assets/uploads/audi-hungaria-logo.svg"
-        height: 8em
 - category: "További támogatóink"
   maxOrganizationsPerLine: 4
   showHeaders: false

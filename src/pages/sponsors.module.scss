@@ -1,10 +1,21 @@
+@import '../utils/breakpoints';
 @import '../utils/flexbox';
 
 .organizationsContainer {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
+  justify-content: center;
 
   @include gap(2em);
+
+  @include media-breakpoint-up(sm) {
+    flex-direction: row;
+  }
+
+  > * {
+    min-width: 256px;
+  }
 }
 
 .sponsorLink {

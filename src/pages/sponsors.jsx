@@ -14,33 +14,33 @@ const SponsorsPage = ({ data }) => (
 
         <div className={styles.organizationsContainer}>
           {node.organizations.map(organization => (
-            <a
-              href={organization.website}
-              className={styles.sponsorLink}
-              style={{ flex: `${100 / node.maxOrganizationsPerLine}%` }}
-            >
-              <Card imageSrc={organization.logo.image}>
-                <Container fluid className={styles.sponsorLogoContainer}>
-                  <img
-                    src={organization.logo.image}
-                    alt=""
-                    className={styles.sponsorLogoImage}
-                    style={{ height: organization.logo.height }}
-                  />
-                </Container>
+            <div style={{ flex: `0 0 ${100 / node.maxOrganizationsPerLine}%` }}>
+              <a href={organization.website} className={styles.sponsorLink}>
+                <Card imageSrc={organization.logo.image}>
+                  <Container fluid className={styles.sponsorLogoContainer}>
+                    <img
+                      src={organization.logo.image}
+                      alt=""
+                      className={styles.sponsorLogoImage}
+                      style={{ height: organization.logo.height }}
+                    />
+                  </Container>
 
-                <Container fluid>
-                  {node.showHeaders && (
-                    <h2 className={styles.sponsorName}>{organization.name}</h2>
-                  )}
-
-                  {node.showDescriptions &&
-                    organization.description && (
-                      <p>{organization.description}</p>
+                  <Container fluid>
+                    {node.showHeaders && (
+                      <h2 className={styles.sponsorName}>
+                        {organization.name}
+                      </h2>
                     )}
-                </Container>
-              </Card>
-            </a>
+
+                    {node.showDescriptions &&
+                      organization.description && (
+                        <p>{organization.description}</p>
+                      )}
+                  </Container>
+                </Card>
+              </a>
+            </div>
           ))}
         </div>
       </Container>
