@@ -17,7 +17,11 @@ const SponsorsPage = ({ data }) => (
             <div style={{ flex: `0 0 ${100 / node.maxOrganizationsPerLine}%` }}>
               <a href={organization.website} className={styles.sponsorLink}>
                 <Card imageSrc={organization.logo.image}>
-                  <Container fluid className={styles.sponsorLogoContainer}>
+                  <Container
+                    fluid
+                    className={styles.sponsorLogoContainer}
+                    style={{ height: `${32 / node.maxOrganizationsPerLine}em` }}
+                  >
                     <img
                       src={organization.logo.image}
                       alt=""
