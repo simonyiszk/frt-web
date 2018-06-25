@@ -14,7 +14,10 @@ const SponsorsPage = ({ data }) => (
 
         <div className={styles.organizationsContainer}>
           {node.organizations.map(organization => (
-            <div style={{ flex: `0 0 ${100 / node.maxOrganizationsPerLine}%` }}>
+            <div
+              key={organization.name}
+              style={{ flex: `0 0 ${100 / node.maxOrganizationsPerLine}%` }}
+            >
               <a href={organization.website} className={styles.sponsorLink}>
                 <Card imageSrc={organization.logo.image}>
                   <Container
@@ -24,7 +27,7 @@ const SponsorsPage = ({ data }) => (
                   >
                     <img
                       src={organization.logo.image}
-                      alt=""
+                      alt={node.showHeaders ? organization.name : ''}
                       className={styles.sponsorLogoImage}
                       style={{ height: organization.logo.height }}
                     />
