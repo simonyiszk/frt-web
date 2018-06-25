@@ -1,4 +1,6 @@
 - category: "Gyémánt szintű támogatóink"
+  showHeaders: true
+  showDescriptions: true
   organizations:
     - name: "Audi Hungaria"
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
@@ -7,6 +9,8 @@
         image: "/assets/uploads/audi-hungaria-logo.svg"
         height: 8em
 - category: "Arany szintű támogatóink"
+  showHeaders: true
+  showDescriptions: false
   organizations:
     - name: "Audi Hungaria"
       website: "https://audi.hu/"
@@ -14,6 +18,8 @@
         image: "/assets/uploads/audi-hungaria-logo.svg"
         height: 8em
 - category: "Ezüst szintű támogatóink"
+  showHeaders: false
+  showDescriptions: false
   organizations:
     - name: "Audi Hungaria"
       website: "https://audi.hu/"
@@ -21,6 +27,8 @@
         image: "/assets/uploads/audi-hungaria-logo.svg"
         height: 8em
 - category: "Bronz szintű támogatóink"
+  showHeaders: false
+  showDescriptions: false
   organizations:
     - name: "Audi Hungaria"
       website: "https://audi.hu/"
@@ -28,6 +36,8 @@
         image: "/assets/uploads/audi-hungaria-logo.svg"
         height: 8em
 - category: "További támogatóink"
+  showHeaders: false
+  showDescriptions: false
   organizations:
     - name: "Audi Hungaria"
       website: "https://audi.hu/"

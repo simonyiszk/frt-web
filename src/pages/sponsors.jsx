@@ -25,8 +25,12 @@ const SponsorsPage = ({ data }) => (
               </Container>
 
               <Container fluid>
-                <h2 className={styles.sponsorName}>{organization.name}</h2>
-                {organization.description && <p>{organization.description}</p>}
+                {node.showHeaders && (
+                  <h2 className={styles.sponsorName}>{organization.name}</h2>
+                )}
+
+                {node.showDescriptions &&
+                  organization.description && <p>{organization.description}</p>}
               </Container>
             </Card>
           </a>
@@ -48,6 +52,8 @@ export const query = graphql`
       edges {
         node {
           category
+          showHeaders
+          showDescriptions
           organizations {
             name
             description
