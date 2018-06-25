@@ -1,4 +1,5 @@
 - category: "Gyémánt szintű támogatóink"
+  maxOrganizationsPerLine: 2
   showHeaders: true
   showDescriptions: true
   organizations:
@@ -8,7 +9,26 @@
       logo:
         image: "/assets/uploads/audi-hungaria-logo.svg"
         height: 8em
+    - name: "Audi Hungaria"
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      website: "https://audi.hu/"
+      logo:
+        image: "/assets/uploads/audi-hungaria-logo.svg"
+        height: 8em
+    - name: "Audi Hungaria"
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      website: "https://audi.hu/"
+      logo:
+        image: "/assets/uploads/audi-hungaria-logo.svg"
+        height: 8em
+    - name: "Audi Hungaria"
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      website: "https://audi.hu/"
+      logo:
+        image: "/assets/uploads/audi-hungaria-logo.svg"
+        height: 8em
 - category: "Arany szintű támogatóink"
+  maxOrganizationsPerLine: 2
   showHeaders: true
   showDescriptions: false
   organizations:
@@ -17,16 +37,48 @@
       logo:
         image: "/assets/uploads/audi-hungaria-logo.svg"
         height: 8em
+    - name: "Audi Hungaria"
+      website: "https://audi.hu/"
+      logo:
+        image: "/assets/uploads/audi-hungaria-logo.svg"
+        height: 8em
+    - name: "Audi Hungaria"
+      website: "https://audi.hu/"
+      logo:
+        image: "/assets/uploads/audi-hungaria-logo.svg"
+        height: 8em
+    - name: "Audi Hungaria"
+      website: "https://audi.hu/"
+      logo:
+        image: "/assets/uploads/audi-hungaria-logo.svg"
+        height: 8em
 - category: "Ezüst szintű támogatóink"
+  maxOrganizationsPerLine: 2
   showHeaders: false
   showDescriptions: false
   organizations:
+    - name: "Audi Hungaria"
+      website: "https://audi.hu/"
+      logo:
+        image: "/assets/uploads/audi-hungaria-logo.svg"
+        height: 8em
+    - name: "Audi Hungaria"
+      website: "https://audi.hu/"
+      logo:
+        image: "/assets/uploads/audi-hungaria-logo.svg"
+        height: 8em
+    - name: "Audi Hungaria"
+      website: "https://audi.hu/"
+      logo:
+        image: "/assets/uploads/audi-hungaria-logo.svg"
+        height: 8em
     - name: "Audi Hungaria"
       website: "https://audi.hu/"
       logo:
         image: "/assets/uploads/audi-hungaria-logo.svg"
         height: 8em
 - category: "Bronz szintű támogatóink"
+  maxOrganizationsPerLine: 3
   showHeaders: false
   showDescriptions: false
   organizations:
@@ -35,10 +87,86 @@
       logo:
         image: "/assets/uploads/audi-hungaria-logo.svg"
         height: 8em
+    - name: "Audi Hungaria"
+      website: "https://audi.hu/"
+      logo:
+        image: "/assets/uploads/audi-hungaria-logo.svg"
+        height: 8em
+    - name: "Audi Hungaria"
+      website: "https://audi.hu/"
+      logo:
+        image: "/assets/uploads/audi-hungaria-logo.svg"
+        height: 8em
+    - name: "Audi Hungaria"
+      website: "https://audi.hu/"
+      logo:
+        image: "/assets/uploads/audi-hungaria-logo.svg"
+        height: 8em
+    - name: "Audi Hungaria"
+      website: "https://audi.hu/"
+      logo:
+        image: "/assets/uploads/audi-hungaria-logo.svg"
+        height: 8em
+    - name: "Audi Hungaria"
+      website: "https://audi.hu/"
+      logo:
+        image: "/assets/uploads/audi-hungaria-logo.svg"
+        height: 8em
+    - name: "Audi Hungaria"
+      website: "https://audi.hu/"
+      logo:
+        image: "/assets/uploads/audi-hungaria-logo.svg"
+        height: 8em
+    - name: "Audi Hungaria"
+      website: "https://audi.hu/"
+      logo:
+        image: "/assets/uploads/audi-hungaria-logo.svg"
+        height: 8em
+    - name: "Audi Hungaria"
+      website: "https://audi.hu/"
+      logo:
+        image: "/assets/uploads/audi-hungaria-logo.svg"
+        height: 8em
 - category: "További támogatóink"
+  maxOrganizationsPerLine: 4
   showHeaders: false
   showDescriptions: false
   organizations:
+    - name: "Audi Hungaria"
+      website: "https://audi.hu/"
+      logo:
+        image: "/assets/uploads/audi-hungaria-logo.svg"
+        height: 8em
+    - name: "Audi Hungaria"
+      website: "https://audi.hu/"
+      logo:
+        image: "/assets/uploads/audi-hungaria-logo.svg"
+        height: 8em
+    - name: "Audi Hungaria"
+      website: "https://audi.hu/"
+      logo:
+        image: "/assets/uploads/audi-hungaria-logo.svg"
+        height: 8em
+    - name: "Audi Hungaria"
+      website: "https://audi.hu/"
+      logo:
+        image: "/assets/uploads/audi-hungaria-logo.svg"
+        height: 8em
+    - name: "Audi Hungaria"
+      website: "https://audi.hu/"
+      logo:
+        image: "/assets/uploads/audi-hungaria-logo.svg"
+        height: 8em
+    - name: "Audi Hungaria"
+      website: "https://audi.hu/"
+      logo:
+        image: "/assets/uploads/audi-hungaria-logo.svg"
+        height: 8em
+    - name: "Audi Hungaria"
+      website: "https://audi.hu/"
+      logo:
+        image: "/assets/uploads/audi-hungaria-logo.svg"
+        height: 8em
     - name: "Audi Hungaria"
       website: "https://audi.hu/"
       logo:
