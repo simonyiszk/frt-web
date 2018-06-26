@@ -11,56 +11,37 @@ const IndexPage = () => (
       </article>
 
       <article>
-        <h1>Formula Student</h1>
-
-        <h2>Mi is a Formula Student?</h2>
+        <h1>Csapattörténet</h1>
         <p>
-          A Formula Student világszerte, egyetemi és főiskolai csapatok számára
-          megrendezett autóversenyek gyűjtőneve, amelyben egyetemi és főiskolai
-          hallgatókból álló csapatok versenyautó tervezésben és építésben mérik
-          össze tudásukat. A küzdelem az autó megtervezésén és megépítésén túl
-          az autó köré felépített teljes üzleti koncepció kidolgozásából,
-          prezentálásából, valamint a projekt működéséhez szükséges anyagi
-          háttér biztosításából áll.
+          A BME Formula Racing Teamet 2007 elején hívta életre néhány tehetséges
+          mérnökhallgató, hogy első és anno egyetlen magyar csapatként
+          versenyautót építsenek és részt vegyenek a világméretű Formula Student
+          versenysorozatban.
         </p>
         <p>
-          A feladat lényege, hogy a csapatoknak olyan szemlélettel kell egy
-          kicsi, együléses versenyautót fejleszteniük, mintha egy
-          sorozatgyártásra készülő fiktív gyár kérte volna fel őket az autó
-          megtervezésére és a prototípus elkészítésére. A versenyautó
-          meghatározott célcsoportja a hétvégi hobbiversenyzők köre, számukra
-          kell elkészíteni a leginkább megfelelő autót. A versenyek
-          szabályrendszere kreatív megoldások keresésére inspirálja a
-          résztvevőket, akik így az elméleti oktatás mellett értékes gyakorlati
-          tapasztalatokkal is gyarapodnak.
+          Az akkor még csak 18 fős alakulatot követte egy 50 fős második
+          generáció, valamint egy harmadik generációs Junior csapat, akikkel
+          kiegészülve az FRT ma már mintegy 100 tagot számlál, az egyetem számos
+          különböző karát képviselve. A csapat mérnökei és menedzserei különböző
+          területeken dolgoznak ugyanazért a célért, a leendő mérnökök tudásának
+          gyarapításáért és a minél jobb eredmények eléréséért, valamint hogy
+          megteremtsék a magas szintű anyagi, szervezeti és tárgyi feltételeket.
+          Többek között ennek köszönhető, hogy 2007 óta kitűnően helytálltak a
+          világ legjobbjai között német, angol, olasz és magyar versenyeken.
         </p>
         <p>
-          Nem csupán a hallgatók, hanem a kapcsolódó iparágakban tevékenykedő
-          cégek számára is hasznos a kezdeményezés; A Formula Student révén
-          szorosabb kapcsolat alakulhat ki a munkáltatók és az egyetemekről,
-          főiskolákról kikerülő hallgatók között, akik már pályakezdőként is
-          hasznosítható, naprakész ismereteket és tudást szereznek. Az egyetemi
-          versenyek megbecsülését jelzi, hogy az angliai futamot
-          Silverstone-ban, az olaszországi fordulót a Ferrari fioranói pályáján,
-          míg a németországi viadalt a Hockenheimringen rendezik. Az elmúlt
-          években a Formula Student pártfogói között megtalálható volt Ross
-          Brawn, a Mercedes GP csapatfőnöke és Mario Theissen, a BMW Motorsport
-          volt igazgatója is.
+          A csapat hatékony működését igazolja, hogy egyre jobb műszaki
+          eredményekkel, és az iparban is helytálló munkaerővel szolgál. A
+          Formula Racing Team nagy hangsúlyt fektet az oktatásra, ezért a
+          csapatnál dolgozó idősebb, és nagy tudású mérnökök elméleti
+          ismeretekkel is segítik a Junior csapatot. Minden adott tehát ahhoz,
+          hogy a csapat még évekig képviselje Magyarországot és a BME-t a
+          Formula Student versenyeken, lehetőséget adva ezzel a hallgatóknak,
+          hogy a legjobbak között versenyezzenek.
         </p>
 
-        <h2>A verseny</h2>
-        <p>
-          A futamok egy többnapos eseménysorozat keretében kerülnek
-          megrendezésre, melynek első megmérettetése a gépátvétel. Ekkor
-          ellenőrzik a bírák, hogy az autók megfelelnek-e a Formula Student
-          által előírt műszaki és biztonsági szabályoknak. A gépátvétel után
-          következnek a „statikus” és “dinamikus” versenyszámok. A pontszám
-          40%-át a statikus versenyszámok adják, míg a versenypályán mutatott
-          teljesítmények 60%-os súllyal szerepelnek a végelszámolásnál. Ez, a
-          közel azonos súlyozás azt jelenti, hogy a csapatoknak és az autóknak
-          nem elég egyetlen területen jól szerepelniük, kiegyensúlyozottan jól
-          kell teljesíteniük a verseny egészén az eredményes szerepléshez.
-        </p>
+        <h1>Vezetőség</h1>
+        <p>...</p>
       </article>
     </Container>
   </Layout>
