@@ -1,6 +1,7 @@
 import React from 'react';
 import Container from '../components/Container';
 import Layout from '../components/Layout';
+import ManagementSection from '../components/ManagementSection';
 import NewsSection from '../components/NewsSection';
 import SectionTitle from '../components/SectionTitle';
 
@@ -38,10 +39,9 @@ const IndexPage = () => (
           Formula Student versenyeken, lehetőséget adva ezzel a hallgatóknak,
           hogy a legjobbak között versenyezzenek.
         </p>
-
-        <SectionTitle>Vezetőség</SectionTitle>
-        <p>...</p>
       </article>
+
+      <ManagementSection />
     </Container>
   </Layout>
 );

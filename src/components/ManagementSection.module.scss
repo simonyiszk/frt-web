@@ -1,0 +1,29 @@
+@import '../utils/breakpoints';
+@import '../utils/flexbox';
+
+.peopleContainer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  @include gap(1em);
+
+  @include media-breakpoint-up(sm) {
+    flex-direction: row;
+
+    @include gap(2em 4em);
+  }
+}
+
+.personImage {
+  display: block;
+  width: 16em;
+  height: 16em;
+  margin: 0 auto;
+}
+
+.personName,
+.personRole {
+  text-align: center;
+}
