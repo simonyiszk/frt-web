@@ -1,14 +1,21 @@
 - label: "Rólunk"
   url: "/"
+  visible: true
 - label: "Autóink"
   url: "/cars/"
+  visible: false
 - label: "Eredményeink"
   url: "/results/"
+  visible: false
 - label: "Galéria"
   url: "/gallery/"
+  visible: false
 - label: "Tudásbázis"
   url: "/knowledge-base/"
+  visible: true
 - label: "Szponzoraink"
   url: "/sponsors/"
+  visible: true
 - label: "Kapcsolat"
   url: "/contact/"
+  visible: true
