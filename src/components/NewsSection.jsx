@@ -3,64 +3,67 @@ import React from 'react';
 import Card from './Card';
 import CardImage from './CardImage';
 import Container from './Container';
+import SectionTitle from './SectionTitle';
 import styles from './NewsSection.module.scss';
 
 const NewsSection = () => (
   <React.Fragment>
-    <h1>Hírek</h1>
+    <SectionTitle>Hírek</SectionTitle>
 
-    <StaticQuery
-      query={graphql`
-        query NewsSectionQuery {
-          allMarkdownRemark(
-            filter: { fileAbsolutePath: { regex: "/news/" } }
-            sort: { fields: [frontmatter___date], order: DESC }
-          ) {
-            edges {
-              node {
-                frontmatter {
-                  title
-                  date
-                  dateString: date(formatString: "LL", locale: "hu")
-                  image
-                  imageDescription
-                  abstract
+    <div className={styles.newsContainer}>
+      <StaticQuery
+        query={graphql`
+          query NewsSectionQuery {
+            allMarkdownRemark(
+              filter: { fileAbsolutePath: { regex: "/news/" } }
+              sort: { fields: [frontmatter___date], order: DESC }
+            ) {
+              edges {
+                node {
+                  frontmatter {
+                    title
+                    date
+                    dateString: date(formatString: "LL", locale: "hu")
+                    image
+                    imageDescription
+                    abstract
+                  }
+                  fields {
+                    slug
+                  }
+                  excerpt
                 }
-                fields {
-                  slug
-                }
-                excerpt
               }
             }
           }
+        `}
+        render={staticData =>
+          staticData.allMarkdownRemark.edges.map(({ node }) => (
+            <article key={node.fields.slug}>
+              <Link to={node.fields.slug} className={styles.newsItemLink}>
+                <Card className={styles.newsItemCard}>
+                  <CardImage
+                    src={node.frontmatter.image}
+                    alt={node.frontmatter.imageDescription}
+                  />
+
+                  <Container fluid>
+                    <h2>{node.frontmatter.title}</h2>
+                    <p>{node.frontmatter.abstract || node.excerpt}</p>
+
+                    <p className={styles.date}>
+                      <time dateTime={node.frontmatter.date}>
+                        {node.frontmatter.dateString}
+                      </time>
+                    </p>
+                  </Container>
+                </Card>
+              </Link>
+            </article>
+          ))
         }
-      `}
-      render={staticData =>
-        staticData.allMarkdownRemark.edges.map(({ node }) => (
-          <article key={node.fields.slug} className={styles.newsItem}>
-            <Link to={node.fields.slug} className={styles.newsItemLink}>
-              <Card>
-                <CardImage
-                  src={node.frontmatter.image}
-                  alt={node.frontmatter.imageDescription}
-                />
-
-                <Container fluid>
-                  <h2>{node.frontmatter.title}</h2>
-                  <p>{node.frontmatter.abstract || node.excerpt}</p>
-
-                  <p className={styles.date}>
-                    <time dateTime={node.frontmatter.date}>
-                      {node.frontmatter.dateString}
-                    </time>
-                  </p>
-                </Container>
-              </Card>
-            </Link>
-          </article>
-        ))
-      }
-    />
+      />
+    </div>
   </React.Fragment>
 );
 

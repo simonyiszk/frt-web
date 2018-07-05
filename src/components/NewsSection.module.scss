@@ -1,7 +1,16 @@
+@import '../utils/breakpoints';
+@import '../utils/flexbox';
 @import '../utils/typography';
 
-.newsItem {
-  margin: 2em auto;
+.newsContainer {
+  display: flex;
+  flex-direction: column;
+
+  @include gap(2em);
+
+  @include media-breakpoint-up(md) {
+    flex-direction: row;
+  }
 }
 
 .newsItemLink {
@@ -11,6 +20,10 @@
   &:hover {
     text-decoration: none;
   }
+}
+
+.newsItemCard {
+  min-height: 100%;
 }
 
 .date {

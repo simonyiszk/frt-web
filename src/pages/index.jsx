@@ -2,16 +2,15 @@ import React from 'react';
 import Container from '../components/Container';
 import Layout from '../components/Layout';
 import NewsSection from '../components/NewsSection';
+import SectionTitle from '../components/SectionTitle';
 
 const IndexPage = () => (
   <Layout>
     <Container>
-      <article>
-        <NewsSection />
-      </article>
+      <NewsSection />
 
       <article>
-        <h1>Csapattörténet</h1>
+        <SectionTitle>Csapattörténet</SectionTitle>
         <p>
           A BME Formula Racing Teamet 2007 elején hívta életre néhány tehetséges
           mérnökhallgató, hogy első és anno egyetlen magyar csapatként
@@ -40,7 +39,7 @@ const IndexPage = () => (
           hogy a legjobbak között versenyezzenek.
         </p>
 
-        <h1>Vezetőség</h1>
+        <SectionTitle>Vezetőség</SectionTitle>
         <p>...</p>
       </article>
     </Container>
