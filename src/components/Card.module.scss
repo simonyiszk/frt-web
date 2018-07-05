@@ -12,11 +12,14 @@ $media-aspect-ratio: 21 / 9;
   }
 }
 
+.rootGradient {
+  background: linear-gradient($color-primary, darken($color-primary, 20%));
+}
+
 .media {
   height: 0;
   padding-top: #{100% / $media-aspect-ratio};
   background-position: center;
   background-repeat: no-repeat;
-  // background-size: cover;
-  background-size: 75%;
+  background-size: cover;
 }

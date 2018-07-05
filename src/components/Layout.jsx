@@ -8,7 +8,7 @@ import Footer from './Footer';
 import Header from './Header';
 import styles from './Layout.module.scss';
 
-const Layout = ({ children }) => (
+const Layout = ({ children, verticallyCentered }) => (
   <div className={styles.root}>
     <StaticQuery
       query={graphql`
@@ -49,7 +49,13 @@ const Layout = ({ children }) => (
       )}
     />
 
-    <main className={styles.main}>{children}</main>
+    <main
+      className={`${styles.main} ${
+        verticallyCentered ? styles.mainVerticallyCentered : ''
+      }`}
+    >
+      {children}
+    </main>
 
     <Footer className={styles.footer} />
   </div>
@@ -57,6 +63,11 @@ const Layout = ({ children }) => (
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
+  verticallyCentered: PropTypes.bool,
+};
+
+Layout.defaultProps = {
+  verticallyCentered: false,
 };
 
 export default Layout;

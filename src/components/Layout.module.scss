@@ -108,3 +108,8 @@ blockquote {
   flex: 1;
   background: map-get(map-get($themes, dark), background);
 }
+
+.mainVerticallyCentered {
+  display: flex;
+  align-items: center;
+}

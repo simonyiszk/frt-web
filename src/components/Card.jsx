@@ -2,28 +2,25 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import styles from './Card.module.scss';
 
-const Card = ({
-  children,
-  imageSrc,
-  imageDescription,
-  className,
-  ...props
-}) => (
-  <div className={`${styles.root} ${className}`} {...props}>
+const Card = ({ children, gradient, className, ...props }) => (
+  <div
+    className={`${styles.root} ${
+      gradient ? styles.rootGradient : ''
+    } ${className}`}
+    {...props}
+  >
     {children}
   </div>
 );
 
 Card.propTypes = {
   children: PropTypes.node.isRequired,
-  imageSrc: PropTypes.string,
-  imageDescription: PropTypes.string,
+  gradient: PropTypes.bool,
   className: PropTypes.string,
 };
 
 Card.defaultProps = {
-  imageSrc: '',
-  imageDescription: '',
+  gradient: false,
   className: '',
 };
 

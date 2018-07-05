@@ -23,7 +23,7 @@ const Footer = ({ ...props }) => (
                 siteFacebookURL
                 siteInstagramURL
                 siteYouTubeURL
-                siteEmailURL
+                siteEmail
               }
             }
           }
@@ -55,7 +55,7 @@ const Footer = ({ ...props }) => (
             </a>
 
             <a
-              href={staticData.site.siteMetadata.siteEmailURL}
+              href={`mailto:${staticData.site.siteMetadata.siteEmail}`}
               className={styles.iconLink}
               aria-label="E-mail"
             >
