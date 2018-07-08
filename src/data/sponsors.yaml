@@ -1,31 +1,49 @@
-- category: "Gyémánt szintű támogatóink"
+﻿- category: "Gyémánt szintű támogatóink"
   maxOrganizationsPerLine: 2
   showHeaders: true
   showDescriptions: true
   organizations:
-    - name: "Audi Hungaria"
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-      website: "https://audi.hu/"
+    - name: "Bosch"
+      description: "A Bosch csoport globálisan négy üzleti területen végzi tevékenységét, melyek között a gépjárműtechnika is szerepel. Magyarországon 1899 óta van jelen, mára az ország egyik legnagyobb külföldi ipari munkaadója lett."
+      website: "http://www.bosch.hu/"
       logo:
-        image: "/assets/uploads/audi-hungaria-logo.svg"
+        image: "/assets/uploads/1_Bosch.svg"
         height: 8em
     - name: "Audi Hungaria"
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      description: "Az elmúlt évek során az Audi Hungaria Magyarország egyik legjelentősebb vállalatává fejlődött, emellett az Audi Hungaria a világ legnagyobb motorgyára."
       website: "https://audi.hu/"
       logo:
-        image: "/assets/uploads/audi-hungaria-logo.svg"
+        image: "/assets/uploads/2_Audi_black.svg"
         height: 8em
-    - name: "Audi Hungaria"
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-      website: "https://audi.hu/"
+    - name: "Zoltek Zrt."
+      description: "A Zoltek Zrt. világszerte vezető szerepet tölt be a szénszál termeléséhez szükséges névleges kapacitással azáltal, hogy alacsony költségű, nagy teljesítményű szénszálat állít elő egy szabadalmaztatott folyamatos karbonizációs folyamaton keresztül."
+      website: "http://zoltek.com/"
       logo:
-        image: "/assets/uploads/audi-hungaria-logo.svg"
+        image: "/assets/uploads/3_Zoltek-Toray-Group-Combo.svg"
         height: 8em
-    - name: "Audi Hungaria"
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-      website: "https://audi.hu/"
+    - name: "Peak Technology"
+      description: "A Peak Technology ötvözi az innovatív megoldásokat, a szénszálas kompozit könnyűszerkezeteket a szilárd kézművességgel. Ez a kombináció a világ egyik legérdekesebb high-tech manufaktúrájává tette őket a könnyű alkatrészek fejlesztése és gyártása területén."
+      website: "https://www.peaktechnology.at/en/"
       logo:
-        image: "/assets/uploads/audi-hungaria-logo.svg"
+        image: "/assets/uploads/4_PEAK_Logo.svg"
+        height: 8em
+    - name: "AVL Autókút Mérnöki Kft."
+      description: "A magyarországi AVL Autókut Kft. fő profilja a motortervezés, a szerkezeti és áramlástechnikai számítások, valamint a fékpadi motorfejlesztés."
+      website: "https://www.avl.com/"
+      logo:
+        image: "/assets/uploads/5_AVL.svg"
+        height: 8em
+    - name: "Trumpf Hungary Kft."
+      description: "A gyártástechnológia továbbfejlesztése, gazdaságos, precíz, jövőálló és hálózatba foglalt alakítása - ez az ő feladatok. Piac- és technológiavezetők, szerszámgépek és ipari gyártólézerek terén és innovációik révén szinte minden ágazatra hatással vannak."
+      website: "http://www.hu.trumpf.com/hu.html"
+      logo:
+        image: "/assets/uploads/6_Trumpf.svg"
+        height: 8em
+    - name: "dSpace"
+      description: "A dSpace ma a mechatronikus vezérlőrendszerek fejlesztésével és tesztelésével foglalkozó mérnöki eszközök vezető gyártója. A széleskörű portfólió és a legmodernebb technológia révén az autóipar, az űrkutatás és az ipari automatizálás fejlesztési partnereként van jelen."
+      website: "https://www.peaktechnology.at/en/"
+      logo:
+        image: "/assets/uploads/7_dSPACE-Logo_CMYK.svg"
         height: 8em
 - category: "Arany szintű támogatóink"
   maxOrganizationsPerLine: 2
