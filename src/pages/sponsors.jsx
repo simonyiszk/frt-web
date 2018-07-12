@@ -18,20 +18,25 @@ const SponsorsPage = ({ data }) => (
               key={organization.name}
               style={{ flex: `0 0 ${100 / node.maxOrganizationsPerLine}%` }}
             >
+              {console.log(organization)}
+
               <a href={organization.website} className={styles.sponsorLink}>
-                <Card imageSrc={organization.logo.image}>
-                  <Container
+                <Card>
+                  <div
                     fluid
                     className={styles.sponsorLogoContainer}
                     style={{ height: `${32 / node.maxOrganizationsPerLine}em` }}
                   >
-                    <img
-                      src={organization.logo.image}
-                      alt={node.showHeaders ? organization.name : ''}
+                    <div
+                      aria-label={node.showHeaders ? organization.name : ''}
                       className={styles.sponsorLogoImage}
-                      style={{ height: organization.logo.height }}
+                      style={{
+                        backgroundImage: `url(${encodeURI(
+                          organization.logo.image,
+                        )})`,
+                      }}
                     />
-                  </Container>
+                  </div>
 
                   <Container fluid>
                     {node.showHeaders && (
