@@ -1,7 +1,7 @@
 import React from 'react';
 import Container from '../components/Container';
 import Layout from '../components/Layout';
-import ManagementSection from '../components/ManagementSection';
+import MembersSection from '../components/MembersSection';
 import NewsSection from '../components/NewsSection';
 import SectionTitle from '../components/SectionTitle';
 
@@ -41,7 +41,7 @@ const IndexPage = () => (
         </p>
       </article>
 
-      <ManagementSection />
+      <MembersSection />
     </Container>
   </Layout>
 );

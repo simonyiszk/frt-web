@@ -2,13 +2,13 @@ import { graphql, StaticQuery } from 'gatsby';
 import React from 'react';
 import Avatar from './Avatar';
 import SectionTitle from './SectionTitle';
-import styles from './ManagementSection.module.scss';
+import styles from './MembersSection.module.scss';
 
-const ManagementSection = () => (
+const MembersSection = () => (
   <React.Fragment>
     <StaticQuery
       query={graphql`
-        query ManagementSectionQuery {
+        query MembersSectionQuery {
           allMembersYaml {
             edges {
               node {
@@ -44,4 +44,4 @@ const ManagementSection = () => (
   </React.Fragment>
 );
 
-export default ManagementSection;
+export default MembersSection;
