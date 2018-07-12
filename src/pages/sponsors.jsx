@@ -18,10 +18,8 @@ const SponsorsPage = ({ data }) => (
               key={organization.name}
               style={{ flex: `0 0 ${100 / node.maxOrganizationsPerLine}%` }}
             >
-              {console.log(organization)}
-
               <a href={organization.website} className={styles.sponsorLink}>
-                <Card>
+                <Card className={styles.sponsorCard}>
                   <div
                     fluid
                     className={styles.sponsorLogoContainer}
