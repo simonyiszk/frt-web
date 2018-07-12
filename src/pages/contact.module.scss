@@ -1,7 +1,37 @@
+@import '../utils/breakpoints';
+
 .mainContainer {
   width: 100%;
 }
 
+.mainCard {
+  display: flex;
+  min-height: 20em;
+  flex-direction: column;
+  margin: 2em 0;
+
+  @include media-breakpoint-up(md) {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.contactInfoContainer {
+  margin-left: 0;
+
+  @include media-breakpoint-up(md) {
+    margin-left: auto;
+  }
+}
+
 .link {
   color: inherit;
+}
+
+.mapImageContainer {
+  flex: 50% 0 0;
+}
+
+.mapImage {
+  height: 100%;
 }
