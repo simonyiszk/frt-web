@@ -12,14 +12,18 @@
   @include media-breakpoint-up(sm) {
     flex-direction: row;
 
-    @include gap(2em 4em);
+    @include gap(1.5em 4em);
   }
+}
+
+.personContainer {
+  flex: 1;
 }
 
 .personImage {
   display: block;
-  width: 16em;
-  height: 16em;
+  width: 10em;
+  height: 10em;
   margin: 0 auto;
 }
 

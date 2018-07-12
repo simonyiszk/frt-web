@@ -30,7 +30,10 @@ const MembersSection = () => (
 
             <div className={styles.peopleContainer}>
               {node.people.map(person => (
-                <div key={`${person.name}-${person.image}`}>
+                <div
+                  key={`${person.name}-${person.image}`}
+                  className={styles.personContainer}
+                >
                   <Avatar src={person.image} className={styles.personImage} />
                   <h2 className={styles.personName}>{person.name}</h2>
                   <h3 className={styles.personRole}>{person.role}</h3>
