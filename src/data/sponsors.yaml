@@ -1,5 +1,5 @@
 ﻿- category: "Gyémánt szintű támogatóink"
-  maxOrganizationsPerLine: 2
+  maxOrganizationsPerLine: 3
   showHeaders: true
   showDescriptions: true
   organizations:
@@ -46,7 +46,7 @@
         image: "/assets/uploads/7_dSPACE-Logo_CMYK.svg"
         height: 8em
 - category: "Arany szintű támogatóink"
-  maxOrganizationsPerLine: 2
+  maxOrganizationsPerLine: 3
   showHeaders: true
   showDescriptions: false
   organizations:
@@ -91,7 +91,7 @@
         image: "/assets/uploads/7_ATT logo-v2.svg"
         height: 8em
 - category: "Ezüst szintű támogatóink"
-  maxOrganizationsPerLine: 2
+  maxOrganizationsPerLine: 3
   showHeaders: false
   showDescriptions: false
   organizations:
@@ -206,7 +206,7 @@
         image: "/assets/uploads/Schroth_Racing.svg"
         height: 8em
 - category: "Bronz szintű támogatóink"
-  maxOrganizationsPerLine: 3
+  maxOrganizationsPerLine: 4
   showHeaders: false
   showDescriptions: false
   organizations:
@@ -366,7 +366,7 @@
         image: "/assets/uploads/Weidmüller_OB_4C.svg"
         height: 8em
 - category: "További támogatóink"
-  maxOrganizationsPerLine: 4
+  maxOrganizationsPerLine: 5
   showHeaders: false
   showDescriptions: false
   organizations:
