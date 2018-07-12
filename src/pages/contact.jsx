@@ -35,27 +35,13 @@ const KnowledgeBasePage = ({ data }) => (
           </Container>
 
           <div className={styles.mapImageContainer}>
-            <StaticQuery
-              query={graphql`
-                query ContactQuery {
-                  site {
-                    siteMetadata {
-                      siteAddressURL
-                      siteAddressPretty
-                    }
-                  }
-                }
-              `}
-              render={staticData => (
-                <a href={staticData.site.siteMetadata.siteAddressURL}>
-                  <img
-                    src={MapImageSrc}
-                    alt={staticData.site.siteMetadata.siteAddressPretty}
-                    className={styles.mapImage}
-                  />
-                </a>
-              )}
-            />
+            <a href={data.site.siteMetadata.siteAddressURL}>
+              <img
+                src={MapImageSrc}
+                alt={data.site.siteMetadata.siteAddressPretty}
+                className={styles.mapImage}
+              />
+            </a>
           </div>
         </Card>
       </article>
