@@ -4,13 +4,14 @@ import React from 'react';
 import Card from '../components/Card';
 import Container from '../components/Container';
 import Layout from '../components/Layout';
+import SectionTitle from '../components/SectionTitle';
 import styles from './sponsors.module.scss';
 
 const SponsorsPage = ({ data }) => (
   <Layout>
     {data.allSponsorsYaml.edges.map(({ node }) => (
       <Container key={node.category}>
-        <h1>{node.category}</h1>
+        <SectionTitle>{node.category}</SectionTitle>
 
         <div className={styles.organizationsContainer}>
           {node.organizations.map(organization => (

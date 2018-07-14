@@ -9,6 +9,8 @@
 
   @include gap(2em);
 
+  margin-bottom: 1em;
+
   @include media-breakpoint-up(sm) {
     flex-direction: row;
   }
