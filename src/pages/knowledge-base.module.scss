@@ -1,16 +1,61 @@
+@import '../utils/breakpoints';
+@import '../utils/flexbox';
+@import '../utils/typography';
+
+$itemDataGap: 2em;
+
+.mainContainer {
+  margin-bottom: 1em;
+}
+
 .eventTypeContainer {
   max-width: none;
 }
 
+.itemTitle {
+  margin-top: 0;
+}
+
 .itemDataContainer {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &:first-child {
+    margin-top: 0.33em;
+  }
 
   > * {
     flex: 1;
     margin: 0;
   }
+
+  @include media-breakpoint-up(lg) {
+    flex-direction: row;
+    align-items: flex-start;
+
+    @include gap($itemDataGap);
+  }
+}
+
+.itemIconContainer {
+  width: 50%;
+  max-width: 16em;
+
+  @include media-breakpoint-up(lg) {
+    width: auto;
+    flex: calc(((100% - #{$measureMaxWidth}) / 2) - #{$itemDataGap / 2}) 0 0;
+  }
+}
+
+.itemIconImage {
+  width: 100%;
+  margin: 2em 0;
 }
 
 .itemDetails {
-  flex: 25% 0 0;
+  @include media-breakpoint-up(lg) {
+    flex: 25% 0 0;
+    align-self: center;
+  }
 }

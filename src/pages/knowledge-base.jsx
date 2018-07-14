@@ -8,7 +8,7 @@ import styles from './knowledge-base.module.scss';
 
 const KnowledgeBasePage = ({ data }) => (
   <Layout>
-    <Container>
+    <Container className={styles.mainContainer}>
       <article
         // eslint-disable-next-line react/no-danger
         dangerouslySetInnerHTML={{
@@ -25,22 +25,29 @@ const KnowledgeBasePage = ({ data }) => (
 
           <div>
             {node.items.map(item => (
-              <section key={item.title}>
-                <h4>{item.title}</h4>
-
-                <div className={styles.itemDataContainer}>
-                  <p>{item.description}</p>
-
-                  <dl className={styles.itemDetails}>
-                    {item.details != null &&
-                      item.details.map(({ key, value }) => (
-                        <React.Fragment key={key}>
-                          <dt>{key}</dt>
-                          <dd>{value}</dd>
-                        </React.Fragment>
-                      ))}
-                  </dl>
+              <section key={item.title} className={styles.itemDataContainer}>
+                <div className={styles.itemIconContainer}>
+                  <img
+                    src={item.icon}
+                    alt=""
+                    className={styles.itemIconImage}
+                  />
                 </div>
+
+                <Measure>
+                  <h4 className={styles.itemTitle}>{item.title}</h4>
+                  <p>{item.description}</p>
+                </Measure>
+
+                <dl className={styles.itemDetails}>
+                  {item.details != null &&
+                    item.details.map(({ key, value }) => (
+                      <React.Fragment key={key}>
+                        <dt>{key}</dt>
+                        <dd>{value}</dd>
+                      </React.Fragment>
+                    ))}
+                </dl>
               </section>
             ))}
           </div>
@@ -70,6 +77,7 @@ export const query = graphql`
           items {
             title
             description
+            icon
             details {
               key
               value
