@@ -16,7 +16,7 @@ const Header = ({ brand, ...props }) => (
           <ul className={styles.menuItemsList}>
             <StaticQuery
               query={graphql`
-                query HeaderQuery {
+                {
                   allHeaderMenuItemsYaml(filter: { visible: { eq: true } }) {
                     edges {
                       node {

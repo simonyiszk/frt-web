@@ -8,7 +8,7 @@ const MembersSection = () => (
   <React.Fragment>
     <StaticQuery
       query={graphql`
-        query MembersSectionQuery {
+        {
           allMembersYaml {
             edges {
               node {

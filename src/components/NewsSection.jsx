@@ -13,7 +13,7 @@ const NewsSection = () => (
     <div className={styles.newsContainer}>
       <StaticQuery
         query={graphql`
-          query NewsSectionQuery {
+          {
             allMarkdownRemark(
               filter: { fileAbsolutePath: { regex: "/news/" } }
               sort: { fields: [frontmatter___date], order: DESC }

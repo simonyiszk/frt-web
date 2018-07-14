@@ -17,7 +17,7 @@ const Footer = ({ ...props }) => (
     <Container className={styles.contentContainer}>
       <StaticQuery
         query={graphql`
-          query FooterQuery {
+          {
             site {
               siteMetadata {
                 siteFacebookURL

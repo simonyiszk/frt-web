@@ -42,7 +42,7 @@ BlogPostTemplate.propTypes = {
 export default BlogPostTemplate;
 
 export const query = graphql`
-  query BlogPostQuery($slug: String!) {
+  query($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
       html
       frontmatter {

@@ -56,7 +56,7 @@ KnowledgeBasePage.propTypes = {
 export default KnowledgeBasePage;
 
 export const query = graphql`
-  query ContactPageQuery {
+  {
     site {
       siteMetadata {
         siteAddressURL

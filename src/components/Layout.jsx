@@ -12,7 +12,7 @@ const Layout = ({ children, verticallyCentered }) => (
   <div className={styles.root}>
     <StaticQuery
       query={graphql`
-        query LayoutQuery {
+        {
           site {
             siteMetadata {
               title

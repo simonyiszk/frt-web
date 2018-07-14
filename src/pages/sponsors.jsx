@@ -65,7 +65,7 @@ SponsorsPage.propTypes = {
 export default SponsorsPage;
 
 export const query = graphql`
-  query SponsorsPageQuery {
+  {
     allSponsorsYaml {
       edges {
         node {
