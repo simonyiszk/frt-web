@@ -16,10 +16,15 @@ $itemDataGap: 2em;
   margin-top: 0;
 }
 
-.itemDataContainer {
+.itemDataOuterContainer {
+  @include media-breakpoint-up(lg) {
+    max-width: none;
+  }
+}
+
+.itemDataInnerContainer {
   display: flex;
   flex-direction: column;
-  align-items: center;
 
   &:first-child {
     margin-top: 0.33em;
@@ -41,6 +46,7 @@ $itemDataGap: 2em;
 .itemIconContainer {
   width: 50%;
   max-width: 16em;
+  margin: 0 auto;
 
   @include media-breakpoint-up(lg) {
     width: auto;
@@ -51,6 +57,10 @@ $itemDataGap: 2em;
 .itemIconImage {
   width: 100%;
   margin: 2em 0;
+
+  @include media-breakpoint-up(lg) {
+    margin: 0;
+  }
 }
 
 .itemDetails {

@@ -25,30 +25,35 @@ const KnowledgeBasePage = ({ data }) => (
 
           <div>
             {node.items.map(item => (
-              <section key={item.title} className={styles.itemDataContainer}>
-                <div className={styles.itemIconContainer}>
-                  <img
-                    src={item.icon}
-                    alt=""
-                    className={styles.itemIconImage}
-                  />
-                </div>
+              <Measure
+                key={item.title}
+                className={styles.itemDataOuterContainer}
+              >
+                <section className={styles.itemDataInnerContainer}>
+                  <div className={styles.itemIconContainer}>
+                    <img
+                      src={item.icon}
+                      alt=""
+                      className={styles.itemIconImage}
+                    />
+                  </div>
 
-                <Measure>
-                  <h4 className={styles.itemTitle}>{item.title}</h4>
-                  <p>{item.description}</p>
-                </Measure>
+                  <Measure>
+                    <h4 className={styles.itemTitle}>{item.title}</h4>
+                    <p>{item.description}</p>
+                  </Measure>
 
-                <dl className={styles.itemDetails}>
-                  {item.details != null &&
-                    item.details.map(({ key, value }) => (
-                      <React.Fragment key={key}>
-                        <dt>{key}</dt>
-                        <dd>{value}</dd>
-                      </React.Fragment>
-                    ))}
-                </dl>
-              </section>
+                  <dl className={styles.itemDetails}>
+                    {item.details != null &&
+                      item.details.map(({ key, value }) => (
+                        <React.Fragment key={key}>
+                          <dt>{key}</dt>
+                          <dd>{value}</dd>
+                        </React.Fragment>
+                      ))}
+                  </dl>
+                </section>
+              </Measure>
             ))}
           </div>
         </article>
