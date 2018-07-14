@@ -60,7 +60,7 @@ a {
 }
 
 article {
-  max-width: 40em;
+  max-width: $measureMaxWidth;
   margin-right: auto;
   margin-left: auto;
 
@@ -84,6 +84,10 @@ blockquote {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
+}
+
+dd {
+  margin: 0 0 1em;
 }
 
 .header,

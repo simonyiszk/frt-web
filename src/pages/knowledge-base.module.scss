@@ -1,0 +1,16 @@
+.eventTypeContainer {
+  max-width: none;
+}
+
+.itemDataContainer {
+  display: flex;
+
+  > * {
+    flex: 1;
+    margin: 0;
+  }
+}
+
+.itemDetails {
+  flex: 25% 0 0;
+}
