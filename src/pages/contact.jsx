@@ -11,7 +11,7 @@ const KnowledgeBasePage = ({ data }) => (
   <Layout verticallyCentered>
     <Container className={styles.mainContainer}>
       <article>
-        <Card gradient className={styles.mainCard}>
+        <Card className={styles.mainCard}>
           <Container fluid className={styles.contactInfoContainer}>
             <h1>Műhely</h1>
             <p>
