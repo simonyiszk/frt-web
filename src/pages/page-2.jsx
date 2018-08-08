@@ -3,18 +3,18 @@ import React from 'react';
 import { Container, Link } from 'rebass';
 import Heading from '../components/Heading';
 import Layout from '../components/Layout';
-import Text from '../components/Text';
+import Paragraph from '../components/Paragraph';
 
 const SecondPage = () => (
   <Layout>
     <Container>
       <Heading>Hi from the second page</Heading>
-      <Text>Welcome to page 2</Text>
-      <Text>
+      <Paragraph>Welcome to page 2</Paragraph>
+      <Paragraph>
         <Link is={GatsbyLink} to="/">
           Go back to the homepage
         </Link>
-      </Text>
+      </Paragraph>
     </Container>
   </Layout>
 );

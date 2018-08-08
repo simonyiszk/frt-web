@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet';
 import { Container } from 'rebass';
 import Heading from '../components/Heading';
 import Layout from '../components/Layout';
-import Text from '../components/Text';
+import Paragraph from '../components/Paragraph';
 
 const NotFoundPage = () => (
   <Layout>
@@ -13,7 +13,7 @@ const NotFoundPage = () => (
 
     <Container>
       <Heading>Az oldal nem található</Heading>
-      <Text>A kért oldal nem érhető el.</Text>
+      <Paragraph>A kért oldal nem érhető el.</Paragraph>
     </Container>
   </Layout>
 );
