@@ -1,14 +1,29 @@
+import PropTypes from 'prop-types';
 import React from 'react';
-import { Blockquote, Border } from 'rebass';
+import { Blockquote as BlockquoteBase, Border } from 'rebass';
 
-export default props => (
+const Blockquote = ({ css, ...props }) => (
   <Border
-    is={Blockquote}
+    is={BlockquoteBase}
     border={0}
     borderLeft={4}
     borderColor="red"
     px={3}
     my={3}
+    css={{
+      fontStyle: 'italic',
+      ...css,
+    }}
     {...props}
   />
 );
+
+Blockquote.propTypes = {
+  css: PropTypes.shape({}),
+};
+
+Blockquote.defaultProps = {
+  css: null,
+};
+
+export default Blockquote;
