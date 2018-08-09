@@ -1,4 +1,4 @@
-import { Link as GatsbyLink } from 'gatsby';
+import { graphql, Link as GatsbyLink, StaticQuery } from 'gatsby';
 import React from 'react';
 import { BackgroundImage, Container, Link } from 'rebass';
 import Card from '../components/Card';
@@ -13,24 +13,53 @@ const IndexPage = () => (
     <Container>
       <Heading textAlign="center">Hírek</Heading>
 
-      <Card>
-        <BackgroundImage
-          ratio={1}
-          src="https://images.unsplash.com/photo-1462331940025-496dfbfc7564?w=2048&q=20"
-        />
+      <StaticQuery
+        query={graphql`
+          {
+            allMarkdownRemark(
+              filter: { fileAbsolutePath: { regex: "/news/" } }
+              sort: { fields: [frontmatter___date], order: DESC }
+            ) {
+              edges {
+                node {
+                  id
+                  frontmatter {
+                    title
+                    date
+                    dateString: date(formatString: "LL", locale: "hu")
+                    image
+                    imageDescription
+                    abstract
+                  }
+                  fields {
+                    slug
+                  }
+                  excerpt
+                }
+              }
+            }
+          }
+        `}
+        render={data =>
+          data.allMarkdownRemark.edges.map(({ node }) => (
+            <Card key={node.id}>
+              <BackgroundImage ratio={9 / 16} src={node.frontmatter.image} />
 
-        <CardContent>
-          <Subhead>Hello</Subhead>
-          <Paragraph>
-            Welcome to your new Gatsby site.
-            <br />
-            Now go build something great.
-          </Paragraph>
-          <Paragraph textAlign="right" css={{ fontStyle: 'italic' }}>
-            2018. június 6.
-          </Paragraph>
-        </CardContent>
-      </Card>
+              <CardContent>
+                <Subhead>{node.frontmatter.title}</Subhead>
+                <Paragraph>
+                  {node.frontmatter.abstract || node.excerpt}
+                </Paragraph>
+                <Paragraph textAlign="right" css={{ fontStyle: 'italic' }}>
+                  <time dateTime={node.frontmatter.date}>
+                    {node.frontmatter.dateString}
+                  </time>
+                </Paragraph>
+              </CardContent>
+            </Card>
+          ))
+        }
+      />
 
       <Paragraph>
         <Link is={GatsbyLink} to="/page-2/">

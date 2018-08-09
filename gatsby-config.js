@@ -18,8 +18,15 @@ module.exports = {
         path: `${__dirname}/src/pages/`,
       },
     },
-    'gatsby-transformer-yaml',
     'gatsby-plugin-react-helmet',
+    'gatsby-plugin-sharp',
     'gatsby-plugin-styled-components',
+    {
+      resolve: 'gatsby-transformer-remark',
+      options: {
+        plugins: ['gatsby-remark-images'],
+      },
+    },
+    'gatsby-transformer-yaml',
   ],
 };
