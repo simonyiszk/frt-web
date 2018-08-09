@@ -43,14 +43,16 @@ const IndexPage = () => (
         render={data =>
           data.allMarkdownRemark.edges.map(({ node }) => (
             <BlockLink key={node.id} is={GatsbyLink} to={node.fields.slug}>
-              <Card>
+              <Card is="article">
                 <BackgroundImage ratio={9 / 16} src={node.frontmatter.image} />
 
                 <CardContent>
                   <Subhead>{node.frontmatter.title}</Subhead>
+
                   <Paragraph>
                     {node.frontmatter.abstract || node.excerpt}
                   </Paragraph>
+
                   <Paragraph textAlign="right" css={{ fontStyle: 'italic' }}>
                     <time dateTime={node.frontmatter.date}>
                       {node.frontmatter.dateString}
