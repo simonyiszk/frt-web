@@ -35,7 +35,6 @@ const IndexPage = () => (
                     date
                     dateString: date(formatString: "LL", locale: "hu")
                     image
-                    imageDescription
                     abstract
                   }
                   fields {
