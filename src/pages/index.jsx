@@ -50,8 +50,12 @@ const IndexPage = () => (
           <Flex flexWrap="wrap" justifyContent="center" m={-3}>
             {data.allMarkdownRemark.edges.map(({ node }) => (
               <Box key={node.id} is={Measure} width={[1, 1, 1 / 2]} p={3}>
-                <BlockLink is={GatsbyLink} to={node.fields.slug}>
-                  <Card is="article">
+                <BlockLink
+                  is={GatsbyLink}
+                  to={node.fields.slug}
+                  css={{ height: '100%' }}
+                >
+                  <Card is="article" css={{ height: '100%' }}>
                     <BackgroundImage
                       ratio={9 / 16}
                       src={node.frontmatter.image}
