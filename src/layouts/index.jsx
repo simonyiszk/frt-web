@@ -4,8 +4,8 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import { Box, Flex, Heading, Provider as RebassProvider, Text } from 'rebass';
 import { injectGlobal } from 'styled-components';
-import Footer from './Footer';
-import Header from './Header';
+import Footer from '../components/Footer';
+import Header from '../components/Header';
 
 injectGlobal`
   body {
@@ -14,7 +14,7 @@ injectGlobal`
   }
 `;
 
-const Layout = ({ children }) => (
+const IndexLayout = ({ children }) => (
   <RebassProvider
     is={Flex}
     theme={{
@@ -69,8 +69,8 @@ const Layout = ({ children }) => (
   </RebassProvider>
 );
 
-Layout.propTypes = {
+IndexLayout.propTypes = {
   children: PropTypes.node.isRequired,
 };
 
-export default Layout;
+export default IndexLayout;

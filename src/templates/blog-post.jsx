@@ -5,7 +5,6 @@ import { Container, Image, Link } from 'rebass';
 import RehypeReact from 'rehype-react';
 import Blockquote from '../components/Blockquote';
 import Heading from '../components/Heading';
-import Layout from '../components/Layout';
 import Paragraph from '../components/Paragraph';
 import Subhead from '../components/Subhead';
 
@@ -26,12 +25,10 @@ const BlogPostTemplate = ({ data }) => {
   const post = data.markdownRemark;
 
   return (
-    <Layout>
-      <Container>
-        <Heading>{post.frontmatter.title}</Heading>
-        {renderAst(post.htmlAst)}
-      </Container>
-    </Layout>
+    <Container>
+      <Heading>{post.frontmatter.title}</Heading>
+      {renderAst(post.htmlAst)}
+    </Container>
   );
 };
 
