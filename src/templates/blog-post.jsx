@@ -33,9 +33,13 @@ const BlogPostTemplate = ({ data }) => {
         <title>{post.frontmatter.title}</title>
       </Helmet>
 
-      <Heading>{post.frontmatter.title}</Heading>
-      {post.frontmatter.image != null && (
-        <BackgroundImage src={post.frontmatter.image} ratio={9 / 21} mb={3} />
+      {post.frontmatter.image != null ? (
+        <>
+          <Heading>{post.frontmatter.title}</Heading>
+          <BackgroundImage src={post.frontmatter.image} ratio={9 / 21} mb={3} />
+        </>
+      ) : (
+        <Measure is={Heading}>{post.frontmatter.title}</Measure>
       )}
 
       {renderAst(post.htmlAst)}
