@@ -6,7 +6,7 @@ import { Box, Container, NavLink } from 'rebass';
 const Header = ({ brand, ...props }) => (
   <Box is="header" color="white" bg="black" {...props}>
     <Container>
-      <NavLink is={GatsbyLink} to="/" px={0} my={3}>
+      <NavLink is={GatsbyLink} to="/" px={0} my={1}>
         {brand}
       </NavLink>
     </Container>

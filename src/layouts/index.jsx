@@ -2,8 +2,9 @@ import { graphql, StaticQuery } from 'gatsby';
 import PropTypes from 'prop-types';
 import React from 'react';
 import Helmet from 'react-helmet';
-import { Box, Flex, Heading, Provider as RebassProvider, Text } from 'rebass';
+import { Box, Flex, Image, Provider as RebassProvider, Text } from 'rebass';
 import { injectGlobal } from 'styled-components';
+import FRTLogoURL from '../assets/frt-logo.svg';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 
@@ -57,7 +58,15 @@ const IndexLayout = ({ children }) => (
       )}
     />
 
-    <Header brand={<Heading>BME FRT</Heading>} />
+    <Header
+      brand={
+        <Image
+          src={FRTLogoURL}
+          alt="Kezdőlap"
+          css={{ height: '3em !important' }}
+        />
+      }
+    />
 
     <Box is="main" flex={1} color="white" bg="gray">
       {children}
