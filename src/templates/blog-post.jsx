@@ -28,22 +28,22 @@ const BlogPostTemplate = ({ data }) => {
   const post = data.markdownRemark;
 
   return (
-    <Container>
+    <>
       <Helmet>
         <title>{post.frontmatter.title}</title>
       </Helmet>
 
-      {post.frontmatter.image != null ? (
-        <>
-          <Heading>{post.frontmatter.title}</Heading>
-          <BackgroundImage src={post.frontmatter.image} ratio={9 / 21} mb={3} />
-        </>
-      ) : (
-        <Measure is={Heading}>{post.frontmatter.title}</Measure>
+      {post.frontmatter.image != null && (
+        <Container px={0}>
+          <BackgroundImage src={post.frontmatter.image} ratio={1 / 3} />
+        </Container>
       )}
 
-      {renderAst(post.htmlAst)}
-    </Container>
+      <Container>
+        <Measure is={Heading}>{post.frontmatter.title}</Measure>
+        {renderAst(post.htmlAst)}
+      </Container>
+    </>
   );
 };
 
