@@ -2,6 +2,12 @@ module.exports = {
   siteMetadata: {
     title: 'BME Formula Racing Team',
     language: 'hu',
+    siteEmail: 'info.bme.frt@gmail.com',
+    siteAddressURL: 'https://goo.gl/maps/Mnsz88S1QWC2',
+    siteAddressPretty: '1205, Budapest Hosszú utca 156.',
+    siteFacebookURL: 'https://www.facebook.com/FormulaRacingTeam/',
+    siteInstagramURL: 'https://www.instagram.com/bme_formularacingteam/',
+    siteYouTubeURL: 'https://www.youtube.com/user/bmeFRT/',
   },
   plugins: [
     {

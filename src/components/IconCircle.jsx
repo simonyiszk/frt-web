@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import { Box } from 'rebass';
 
-const IconCircle = ({ is: Icon, title, ...props }) => (
+const IconCircle = ({ icon: Icon, title, ...props }) => (
   <Box
     {...props}
     css={{
@@ -18,7 +18,7 @@ const IconCircle = ({ is: Icon, title, ...props }) => (
 );
 
 IconCircle.propTypes = {
-  is: PropTypes.func.isRequired,
+  icon: PropTypes.func.isRequired,
   title: PropTypes.string,
   color: PropTypes.string,
   bg: PropTypes.string,

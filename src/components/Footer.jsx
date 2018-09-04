@@ -1,19 +1,52 @@
+import { graphql, StaticQuery } from 'gatsby';
 import PropTypes from 'prop-types';
 import React from 'react';
 import { Box, Container } from 'rebass';
 import { FacebookF, Instagram, Youtube } from 'styled-icons/fa-brands';
 import { Envelope } from 'styled-icons/fa-solid';
-import IconCircle from './IconCircle';
+import IconCircleLink from './IconCircleLink';
 
 const Footer = ({ children, ...props }) => (
   <Box is="footer" py={3} color="white" bg="black" {...props}>
     <Container>
-      <Box fontSize={3}>
-        <IconCircle is={FacebookF} title="Facebook" />
-        <IconCircle is={Instagram} title="Instagram" />
-        <IconCircle is={Youtube} title="YouTube" />
-        <IconCircle is={Envelope} title="E-mail" />
-      </Box>
+      <StaticQuery
+        query={graphql`
+          {
+            site {
+              siteMetadata {
+                siteFacebookURL
+                siteInstagramURL
+                siteYouTubeURL
+                siteEmail
+              }
+            }
+          }
+        `}
+        render={data => (
+          <Box fontSize={3}>
+            <IconCircleLink
+              icon={FacebookF}
+              href={data.site.siteMetadata.siteFacebookURL}
+              title="Facebook"
+            />
+            <IconCircleLink
+              icon={Instagram}
+              href={data.site.siteMetadata.siteInstagramURL}
+              title="Instagram"
+            />
+            <IconCircleLink
+              icon={Youtube}
+              href={data.site.siteMetadata.siteYouTubeURL}
+              title="YouTube"
+            />
+            <IconCircleLink
+              icon={Envelope}
+              href={`mailto:${data.site.siteMetadata.siteEmail}`}
+              title="E-mail"
+            />
+          </Box>
+        )}
+      />
     </Container>
   </Box>
 );
