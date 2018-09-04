@@ -34,9 +34,7 @@ const BlogPostTemplate = ({ data }) => {
       </Helmet>
 
       {post.frontmatter.image != null && (
-        <Container px={0}>
-          <BackgroundImage src={post.frontmatter.image} ratio={1 / 3} />
-        </Container>
+        <BackgroundImage src={post.frontmatter.image} ratio={1 / 3} />
       )}
 
       <Container>
