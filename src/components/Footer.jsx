@@ -23,7 +23,14 @@ const Footer = ({ children, ...props }) => (
           }
         `}
         render={data => (
-          <Box fontSize={3}>
+          <Box
+            fontSize={3}
+            css={{
+              '*:not(:first-child)': {
+                marginLeft: '1em',
+              },
+            }}
+          >
             <IconCircleLink
               icon={FacebookF}
               href={data.site.siteMetadata.siteFacebookURL}
