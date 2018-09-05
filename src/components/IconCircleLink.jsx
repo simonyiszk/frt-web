@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import React from 'react';
-import { NavLink } from 'rebass';
 import IconCircle from './IconCircle';
+import NavLink from './NavLink';
 
 const IconCircleLink = ({ href, ...props }) => (
   <NavLink href={href} fontSize="unset" p={0}>
