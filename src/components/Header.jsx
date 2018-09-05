@@ -34,15 +34,15 @@ const Header = ({ brand, ...props }) => (
             }
           `}
           render={data => (
-            <List p={0} css={{ '> *': { display: 'inline-block' } }}>
+            <List p={0}>
               {data.allHeaderMenuItemsYaml.edges.map(
                 ({ node }) =>
                   !node.hidden && (
-                    <li>
+                    <Box is="li" css={{ display: 'inline-block' }}>
                       <NavLink is={GatsbyLink} to={node.href}>
                         {node.title}
                       </NavLink>
-                    </li>
+                    </Box>
                   ),
               )}
             </List>
