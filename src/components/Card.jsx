@@ -1,6 +1,8 @@
 import React from 'react';
-import { Card } from 'rebass';
+import { Card as CardBase } from 'rebass';
 
-export default props => (
-  <Card bg="red" borderRadius={2} boxShadow={0} p={0} {...props} />
+const Card = props => (
+  <CardBase bg="red" borderRadius={2} boxShadow={0} p={0} {...props} />
 );
+
+export default Card;

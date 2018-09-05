@@ -1,4 +1,6 @@
 import React from 'react';
-import { Subhead } from 'rebass';
+import { Subhead as SubheadBase } from 'rebass';
 
-export default props => <Subhead fontFamily="display" my={3} {...props} />;
+const Subhead = props => <SubheadBase fontFamily="display" my={3} {...props} />;
+
+export default Subhead;

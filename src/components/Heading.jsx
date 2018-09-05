@@ -1,4 +1,6 @@
 import React from 'react';
-import { Heading } from 'rebass';
+import { Heading as HeadingBase } from 'rebass';
 
-export default props => <Heading fontFamily="display" my={3} {...props} />;
+const Heading = props => <HeadingBase fontFamily="display" my={3} {...props} />;
+
+export default Heading;

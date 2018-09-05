@@ -1,4 +1,6 @@
 import React from 'react';
-import { Measure } from 'rebass';
+import { Measure as MeasureBase } from 'rebass';
 
-export default props => <Measure maxWidth="32rem" mx="auto" {...props} />;
+const Measure = props => <MeasureBase maxWidth="32rem" mx="auto" {...props} />;
+
+export default Measure;
