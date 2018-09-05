@@ -26,7 +26,7 @@ const Footer = ({ children, ...props }) => (
           <Box
             fontSize={3}
             css={{
-              '*:not(:first-child)': {
+              '> *:not(:first-child)': {
                 marginLeft: '1em',
               },
             }}
