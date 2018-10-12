@@ -3,6 +3,12 @@
 @import '../utils/themes';
 @import '../utils/typography';
 
+body,
+.header,
+.footer {
+  background: black;
+}
+
 html > body {
   @include theme(dark);
   @include font(body);
@@ -17,12 +23,6 @@ html > body {
   @include media-breakpoint-up(xl) {
     font-size: 1.5em;
   }
-}
-
-body,
-.header,
-.footer {
-  background: black;
 }
 
 h1,
