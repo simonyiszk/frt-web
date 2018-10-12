@@ -1,0 +1,482 @@
+﻿- category: 'Gyémánt szintű támogatóink'
+  maxOrganizationsPerLine: 3
+  showHeaders: true
+  showDescriptions: true
+  organizations:
+    - name: 'Bosch'
+      description: 'A Bosch csoport globálisan négy üzleti területen végzi tevékenységét, melyek között a gépjárműtechnika is szerepel. Magyarországon 1899 óta van jelen, mára az ország egyik legnagyobb külföldi ipari munkaadója lett.'
+      website: 'http://www.bosch.hu/'
+      logo:
+        image: '/assets/uploads/1_Bosch.svg'
+        height: 8em
+    - name: 'Audi Hungaria'
+      description: 'Az elmúlt évek során az Audi Hungaria Magyarország egyik legjelentősebb vállalatává fejlődött, emellett az Audi Hungaria a világ legnagyobb motorgyára.'
+      website: 'https://audi.hu/'
+      logo:
+        image: '/assets/uploads/2_Audi_black.svg'
+        height: 8em
+    - name: 'Zoltek Zrt.'
+      description: 'A Zoltek Zrt. világszerte vezető szerepet tölt be a szénszál termeléséhez szükséges névleges kapacitással azáltal, hogy alacsony költségű, nagy teljesítményű szénszálat állít elő egy szabadalmaztatott folyamatos karbonizációs folyamaton keresztül.'
+      website: 'http://zoltek.com/'
+      logo:
+        image: '/assets/uploads/3_Zoltek-Toray-Group-Combo.svg'
+        height: 8em
+    - name: 'Peak Technology'
+      description: 'A Peak Technology ötvözi az innovatív megoldásokat, a szénszálas kompozit könnyűszerkezeteket a szilárd kézművességgel. Ez a kombináció a világ egyik legérdekesebb high-tech manufaktúrájává tette őket a könnyű alkatrészek fejlesztése és gyártása területén.'
+      website: 'https://www.peaktechnology.at/en/'
+      logo:
+        image: '/assets/uploads/4_PEAK_Logo.svg'
+        height: 8em
+    - name: 'AVL Autókút Mérnöki Kft.'
+      description: 'A magyarországi AVL Autókut Kft. fő profilja a motortervezés, a szerkezeti és áramlástechnikai számítások, valamint a fékpadi motorfejlesztés.'
+      website: 'https://www.avl.com/'
+      logo:
+        image: '/assets/uploads/5_AVL.svg'
+        height: 8em
+    - name: 'Trumpf Hungary Kft.'
+      description: 'A gyártástechnológia továbbfejlesztése, gazdaságos, precíz, jövőálló és hálózatba foglalt alakítása - ez az ő feladatok. Piac- és technológiavezetők, szerszámgépek és ipari gyártólézerek terén és innovációik révén szinte minden ágazatra hatással vannak.'
+      website: 'http://www.hu.trumpf.com/hu.html'
+      logo:
+        image: '/assets/uploads/6_Trumpf.svg'
+        height: 8em
+    - name: 'dSpace'
+      description: 'A dSpace ma a mechatronikus vezérlőrendszerek fejlesztésével és tesztelésével foglalkozó mérnöki eszközök vezető gyártója. A széleskörű portfólió és a legmodernebb technológia révén az autóipar, az űrkutatás és az ipari automatizálás fejlesztési partnereként van jelen.'
+      website: 'https://www.dspace.com/en/inc/home.cfm'
+      logo:
+        image: '/assets/uploads/7_dSPACE-Logo_CMYK.svg'
+        height: 8em
+- category: 'Arany szintű támogatóink'
+  maxOrganizationsPerLine: 3
+  showHeaders: true
+  showDescriptions: false
+  organizations:
+    - name: 'PNH Ipari-, Kereskedelmi és Szolgáltató Kft.'
+      website: 'http://www.pnh.hu/'
+      logo:
+        image: '/assets/uploads/1_PNH_1.svg'
+        height: 8em
+    - name: 'National Instruments'
+      website: 'http://hungary.ni.com/'
+      logo:
+        image: '/assets/uploads/2_National_Instruments.svg'
+        height: 8em
+    - name: 'Castrum Ferreum Kft.'
+      website: 'http://castrum-ferreum.hu/'
+      logo:
+        image: '/assets/uploads/3_CastrumFerreum.svg'
+        height: 8em
+    - name: 'Fémalk Zrt.'
+      website: 'http://www.femalk.hu/index.php?lang=hu'
+      logo:
+        image: '/assets/uploads/4_Fémalk.svg'
+        height: 8em
+    - name: 'Varinex Informatikai Zrt.'
+      website: 'http://www.varinex.hu/'
+      logo:
+        image: '/assets/uploads/5_Varinex.png'
+        height: 8em
+    - name: 'eCon Engineering Kft.'
+      website: 'http://www.econengineering.com/hu/'
+      logo:
+        image: '/assets/uploads/6_econ-engineering.svg'
+        height: 8em
+    - name: 'Ansys'
+      website: 'https://www.ansys.com/'
+      logo:
+        image: '/assets/uploads/8_ansys_logo_without-blur.svg'
+        height: 8em
+    - name: 'ATT Automatica'
+      website: 'http://www.attautomatica.hu/'
+      logo:
+        image: '/assets/uploads/7_ATT logo-v2.svg'
+        height: 8em
+- category: 'Ezüst szintű támogatóink'
+  maxOrganizationsPerLine: 3
+  showHeaders: false
+  showDescriptions: false
+  organizations:
+    - name: 'Frimo'
+      website: 'http://www.frimo.com/hu/'
+      logo:
+        image: '/assets/uploads/1_Frimo.svg'
+        height: 8em
+    - name: 'Endi engineering'
+      website: 'https://www.endiline.hu/'
+      logo:
+        image: '/assets/uploads/2_Endiline_Logo.svg'
+        height: 8em
+    - name: 'Ekol Logistics Kft.'
+      website: 'http://www.ekol.com/en/'
+      logo:
+        image: '/assets/uploads/3_EKOL Logo.svg'
+        height: 8em
+    - name: 'Loctite'
+      website: 'http://www.loctite.hu/cps/rde/xchg/henkel_huu/hs.xsl/homepage.htm'
+      logo:
+        image: '/assets/uploads/4_Loctite.svg'
+        height: 8em
+    - name: 'Texas Instruments'
+      website: 'http://www.ti.com/'
+      logo:
+        image: '/assets/uploads/5_TexasInstruments.svg'
+        height: 8em
+    - name: 'Lomex'
+      website: 'http://lomex.hu/hu/homepage'
+      logo:
+        image: '/assets/uploads/6_Lomex.svg'
+        height: 8em
+    - name: 'Velodyne Europe GmbH'
+      website: 'http://www.velodynelidar.com/'
+      logo:
+        image: '/assets/uploads/7_Velodyne_LiDar_Vertical_Logo__RGB_Blue1.svg'
+        height: 8em
+    - name: 'Ferdinand Gross'
+      website: 'http://www.schrauben-gross.hu/home.html'
+      logo:
+        image: '/assets/uploads/8_FerdinandGross.svg'
+        height: 8em
+    - name: 'Claas Hungária Kft.'
+      website: 'http://www.claas.com/cl-gr/en/company/standorte/europa/ungarn/start,lang=en_UK.html'
+      logo:
+        image: '/assets/uploads/9_Claas.svg'
+        height: 8em
+    - name: 'Dendrit-Mentor Kft.'
+      website: 'http://www.dendrit-mentor.hu/'
+      logo:
+        image: '/assets/uploads/10_Dendrit-mentor.svg'
+        height: 8em
+    - name: 'Demmeler Maschinenbau GmbH & Co. KG'
+      website: 'http://www.demmeler.com/en/home.html'
+      logo:
+        image: '/assets/uploads/11_Demmeler.svg'
+        height: 8em
+    - name: 'Rath & Co Ges.m.b.H'
+      website: 'http://www.rath-co.at/de/home.html'
+      logo:
+        image: '/assets/uploads/11_rath_cmyk.svg'
+        height: 8em
+    - name: 'Würth Elektronik'
+      website: 'https://www.we-online.com/web/en/wuerth_elektronik/start.php'
+      logo:
+        image: '/assets/uploads/12_wurthelektronik.svg'
+        height: 8em
+    - name: 'Metaplast Gear Technology Kkt.'
+      website: 'http://www.metaplastgear.eu/otthon.html'
+      logo:
+        image: '/assets/uploads/Metaplast.PNG'
+        height: 8em
+    - name: 'Farix'
+      website: 'http://www.farix.hu/'
+      logo:
+        image: '/assets/uploads/14_farix_logo2017.svg'
+        height: 8em
+    - name: 'PTC'
+      website: 'http://www.ptc.com/'
+      logo:
+        image: '/assets/uploads/15_ptc-master-color.svg'
+        height: 8em
+    - name: 'Creo'
+      website: 'http://www.ptc.com/product/creo'
+      logo:
+        image: '/assets/uploads/16_Creo.svg'
+        height: 8em
+    - name: 'S&T'
+      website: 'http://www.snt.hu/'
+      logo:
+        image: '/assets/uploads/17_S_T.svg'
+        height: 8em
+    - name: 'thyssenkrupp Components Technology'
+      website: 'http://www.thyssenkrupp.hu/'
+      logo:
+        image: '/assets/uploads/18_tk_Primary_Logo_P2394_35mm.svg'
+        height: 8em
+    - name: 'Modul Kft.'
+      website: 'http://modul-fogaskerek.hu/'
+      logo:
+        image: '/assets/uploads/modul2.png'
+        height: 8em
+    - name: 'IPG'
+      website: 'https://ipg-automotive.com/'
+      logo:
+        image: '/assets/uploads/IPG_Logo.svg'
+        height: 8em
+    - name: 'Schroth Racing'
+      website: 'https://www.schrothracing.com/'
+      logo:
+        image: '/assets/uploads/Schroth_Racing.svg'
+        height: 8em
+- category: 'Bronz szintű támogatóink'
+  maxOrganizationsPerLine: 4
+  showHeaders: false
+  showDescriptions: false
+  organizations:
+    - name: 'Aero Metal Kft.'
+      website: 'http://aerometal.hu/'
+      logo:
+        image: '/assets/uploads/AeroMetal.svg'
+        height: 8em
+    - name: 'Altair'
+      website: 'http://www.altair.com'
+      logo:
+        image: '/assets/uploads/Altair.svg'
+        height: 8em
+    - name: 'Amari Hungaria Kft.'
+      website: 'http://www.amari.hu/'
+      logo:
+        image: '/assets/uploads/Amari.svg'
+        height: 8em
+    - name: 'Amplus-Tech Kft.'
+      website: 'http://www.amplus.hu/'
+      logo:
+        image: '/assets/uploads/AmplusTech.svg'
+        height: 8em
+    - name: 'Bender GmbH & Co. KG'
+      website: 'http://www.bender.org/'
+      logo:
+        image: '/assets/uploads/Bender.svg'
+        height: 8em
+    - name: 'BME'
+      website: 'https://www.bme.hu/'
+      logo:
+        image: '/assets/uploads/BME_fekete.svg'
+        height: 8em
+    - name: 'BME EHK'
+      website: 'http://ehk.bme.hu/'
+      logo:
+        image: '/assets/uploads/bme_ehk.svg'
+        height: 8em
+    - name: 'Böllhoff Kft.'
+      website: 'http://www.boellhoff.hu/hu/hu.php'
+      logo:
+        image: '/assets/uploads/Bollhoff.svg'
+        height: 8em
+    - name: 'Brunner fémmegmunkáló Kft.'
+      website: 'http://brunner.hu/'
+      logo:
+        image: '/assets/uploads/Brunner.svg'
+        height: 8em
+    - name: 'Formula Student East'
+      website: 'http://fseast.eu/'
+      logo:
+        image: '/assets/uploads/FS_East_2016_logo_CMYK_Wht_BK_Sld.svg'
+        height: 8em
+    - name: 'Hauni Hungária Gépgyártó Kft.'
+      website: 'http://www.hauni.hu/hu/home.html'
+      logo:
+        image: '/assets/uploads/Hauni.svg'
+        height: 8em
+    - name: 'Knorr Bremse'
+      website: 'http://www.knorr-bremse.hu/hu/'
+      logo:
+        image: '/assets/uploads/KnorrBremse.svg'
+        height: 8em
+    - name: 'Lapp Hungaria Kft.'
+      website: 'http://lapphungaria.lappgroup.com/'
+      logo:
+        image: '/assets/uploads/LAPPGroup.svg'
+        height: 8em
+    - name: 'Macher'
+      website: 'http://www.macher.hu/'
+      logo:
+        image: '/assets/uploads/Macher.svg'
+        height: 8em
+    - name: 'Mag Hungary Kft.'
+      website: 'http://www.mag-ias.com/web/de/weltweit/europa.php'
+      logo:
+        image: '/assets/uploads/Mag.svg'
+        height: 8em
+    - name: 'MathWorks'
+      website: 'https://www.mathworks.com/'
+      logo:
+        image: '/assets/uploads/MathWorks.svg'
+        height: 8em
+    - name: 'Melasta'
+      website: 'http://www.melasta.com/'
+      logo:
+        image: '/assets/uploads/MELASTA-LOGO.svg'
+        height: 8em
+    - name: 'Melior Laser'
+      website: 'http://www.meliorlaser.hu/hu/komplex-lemezmegmunkalas.html'
+      logo:
+        image: '/assets/uploads/MeliorLaser.svg'
+        height: 8em
+    - name: 'MWU'
+      website: 'https://www.marquipwardunited.com/'
+      logo:
+        image: '/assets/uploads/MWU_BW_Papersystems_MU_logo_A3.svg'
+        height: 8em
+    - name: 'NCT Akadémia'
+      website: 'http://akademia.nct.hu/hu/'
+      logo:
+        image: '/assets/uploads/NCTAkadémia.svg'
+        height: 8em
+    - name: 'Pantools'
+      website: 'http://www.pantools.hu/'
+      logo:
+        image: '/assets/uploads/pantools.svg'
+        height: 8em
+    - name: 'PEC'
+      website: 'http://www.peccorp.com/'
+      logo:
+        image: '/assets/uploads/PEC.svg'
+        height: 8em
+    - name: 'Quadrant'
+      website: 'http://www.teraglobus.hu/'
+      logo:
+        image: '/assets/uploads/Quadrant.svg'
+        height: 8em
+    - name: 'SKF'
+      website: 'http://www.skf.com/portal/skf_hu/home'
+      logo:
+        image: '/assets/uploads/SKF.svg'
+        height: 8em
+    - name: 'SMC'
+      website: 'https://www.smc.eu/portal_ssl/WebContent/main/index_restyling.jsp?lang=en&ctry=EU&is_main=yes&dfl_locale=yes'
+      logo:
+        image: '/assets/uploads/SMC-Logo_91c44m.svg'
+        height: 8em
+    - name: 'Tracon'
+      website: 'http://shop.traconelectric.com/'
+      logo:
+        image: '/assets/uploads/TraconElectric.svg'
+        height: 8em
+    - name: 'Tresz Kft.'
+      website: 'http://www.tresz.hu/'
+      logo:
+        image: '/assets/uploads/Tresz.svg'
+        height: 8em
+    - name: 'UniPCB'
+      website: 'http://www.unipcb.hu/'
+      logo:
+        image: '/assets/uploads/unipcb.svg'
+        height: 8em
+    - name: 'VectorNav Technologies, LLC'
+      website: 'https://www.vectornav.com/'
+      logo:
+        image: '/assets/uploads/VectorNAV_phrase-01.svg'
+        height: 8em
+    - name: 'Vezetéstechnikai - Teszt - Tréning Bt.'
+      website: 'http://www.vezetestechnika.eu/'
+      logo:
+        image: '/assets/uploads/Vezetéstechnika.svg'
+        height: 8em
+    - name: 'Weidmüller Kereskedelmi Kft.'
+      website: 'http://www.weidmueller.hu/docs/cw_start_v2.aspx?id=63573&domid=1031&sp=2&m1=63531&m2=63573'
+      logo:
+        image: '/assets/uploads/Weidmüller_OB_4C.svg'
+        height: 8em
+- category: 'További támogatóink'
+  maxOrganizationsPerLine: 5
+  showHeaders: false
+  showDescriptions: false
+  organizations:
+    - name: 'Aimotive'
+      website: 'https://aimotive.com/'
+      logo:
+        image: '/assets/uploads/aimotive.svg'
+        height: 8em
+    - name: 'Autocolor'
+      website: 'http://www.autocolor.hu'
+      logo:
+        image: '/assets/uploads/Autocolor.svg'
+        height: 8em
+    - name: 'Barabás Mérnökiroda Kft.'
+      website: 'http://bmikft.hu/'
+      logo:
+        image: '/assets/uploads/Barabas.svg'
+        height: 8em
+    - name: 'BME GT3'
+      website: 'http://www.gt3.bme.hu/'
+      logo:
+        image: '/assets/uploads/bmegt3.svg'
+        height: 8em
+    - name: 'BME PT'
+      website: 'http://www.pt.bme.hu/'
+      logo:
+        image: '/assets/uploads/bmept.svg'
+        height: 8em
+    - name: 'Easy Kft.'
+      website: 'http://www.easykft.hu/'
+      logo:
+        image: '/assets/uploads/easy-kft.png'
+        height: 8em
+    - name: 'Eurocircuits Kft.'
+      website: 'http://www.eurocircuits.hu/'
+      logo:
+        image: '/assets/uploads/EuroCircuits.svg'
+        height: 8em
+    - name: 'Hirschmann'
+      website: 'http://www.hirschmann.com/en/index.phtml'
+      logo:
+        image: '/assets/uploads/hirshmann.svg'
+        height: 8em
+    - name: 'Kontakt-Elektro Kft.'
+      website: 'http://www.kontakt-elektro.hu/hu/kontakt.html'
+      logo:
+        image: '/assets/uploads/KontaktElektro.svg'
+        height: 8em
+    - name: 'Meleghegyi és Társa Kft.'
+      website: 'https://lezervagas.hu/'
+      logo:
+        image: '/assets/uploads/Meleghegyi.svg'
+        height: 8em
+    - name: 'Meva Kft.'
+      website: 'http://www.mevakomi.hu/'
+      logo:
+        image: '/assets/uploads/MEVA-HU_1_Pantone.svg'
+        height: 8em
+    - name: 'Microsolder Kft.'
+      website: 'http://www.microsolder.hu/'
+      logo:
+        image: '/assets/uploads/microsolderLogo4.png'
+        height: 8em
+    - name: 'Moliton Kft.'
+      website: 'http://moliton.hu/'
+      logo:
+        image: '/assets/uploads/Moliton.svg'
+        height: 8em
+    - name: 'Novia'
+      website: 'http://www.novia.hu/'
+      logo:
+        image: '/assets/uploads/novia.svg'
+        height: 8em
+    - name: 'Novotechnik'
+      website: 'http://www.novotechnik.com/'
+      logo:
+        image: '/assets/uploads/Novotechnik.svg'
+        height: 8em
+    - name: 'Pannenergy Nyrt.'
+      website: 'http://www.pannergy.com/'
+      logo:
+        image: '/assets/uploads/PannErgy.svg'
+        height: 8em
+    - name: 'Paradicsom dekor'
+      website: 'http://www.paradicsomdekor.hu/'
+      logo:
+        image: '/assets/uploads/Paradicsom.svg'
+        height: 8em
+    - name: 'Porsche Hungaria'
+      website: 'https://www.porschehungaria.hu/'
+      logo:
+        image: '/assets/uploads/porschehungaria.svg'
+        height: 8em
+    - name: 'Szerviz-Trade Kft.'
+      website: 'http://www.szerviztrade.hu/'
+      logo:
+        image: '/assets/uploads/SzervizTrade.svg'
+        height: 8em
+    - name: 'Szig & Metál'
+      website: 'hhttp://szigmetal.hu/'
+      logo:
+        image: '/assets/uploads/szigmetal.svg'
+        height: 8em
+    - name: 'Sztaki Gép Érzékelés Labor'
+      website: 'https://www.sztaki.hu/'
+      logo:
+        image: '/assets/uploads/sztaki_logo_kompakt_kek.svg'
+        height: 8em
+    - name: 'Trelleborg Applied Technologies'
+      website: 'http://www.trelleborg.com/en'
+      logo:
+        image: '/assets/uploads/Trellebor Corporate logo RGB _100.jpg'
+        height: 8em
