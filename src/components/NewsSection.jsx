@@ -42,10 +42,15 @@ const NewsSection = () => (
             <article key={node.fields.slug}>
               <Link to={node.fields.slug} className={styles.newsItemLink}>
                 <Card className={styles.newsItemCard}>
-                  <CardImage
-                    src={node.frontmatter.image}
-                    alt={node.frontmatter.imageDescription}
-                  />
+                  {node.frontmatter.image != null ? (
+                    <CardImage
+                      src={node.frontmatter.image}
+                      alt={node.frontmatter.imageDescription}
+                      className={styles.newsItemCardImage}
+                    />
+                  ) : (
+                    <div className={styles.newsItemCardImage} />
+                  )}
 
                   <Container fluid>
                     <h2>{node.frontmatter.title}</h2>

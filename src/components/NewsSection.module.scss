@@ -26,6 +26,10 @@
   min-height: 100%;
 }
 
+.newsItemCardImage {
+  height: 16em;
+}
+
 .date {
   @include font(display);
 
