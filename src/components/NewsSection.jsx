@@ -39,7 +39,7 @@ const NewsSection = () => (
         `}
         render={staticData =>
           staticData.allMarkdownRemark.edges.map(({ node }) => (
-            <article key={node.fields.slug}>
+            <article key={node.fields.slug} className={styles.newsItem}>
               <Link to={node.fields.slug} className={styles.newsItemLink}>
                 <Card className={styles.newsItemCard}>
                   {node.frontmatter.image != null ? (

@@ -4,12 +4,14 @@
 
 .newsContainer {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
 
   @include gap(2em);
+}
 
+.newsItem {
   @include media-breakpoint-up(md) {
-    flex-direction: row;
+    flex: 50% 0 0;
   }
 }
 
