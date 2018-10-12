@@ -22,7 +22,6 @@ const SponsorsPage = ({ data }) => (
               <a href={organization.website} className={styles.sponsorLink}>
                 <Card className={styles.sponsorCard}>
                   <div
-                    fluid
                     className={styles.sponsorLogoContainer}
                     style={{ height: `${32 / node.maxOrganizationsPerLine}em` }}
                   >
