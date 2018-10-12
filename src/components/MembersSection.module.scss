@@ -17,7 +17,7 @@
 }
 
 .personContainer {
-  flex: 1;
+  flex: 0 1;
 }
 
 .personImage {
@@ -29,5 +29,6 @@
 
 .personName,
 .personRole {
+  margin-bottom: 0.5em;
   text-align: center;
 }

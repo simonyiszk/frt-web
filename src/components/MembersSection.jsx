@@ -36,7 +36,7 @@ const MembersSection = () => (
                 >
                   <Avatar src={person.image} className={styles.personImage} />
                   <h2 className={styles.personName}>{person.name}</h2>
-                  <h3 className={styles.personRole}>{person.role}</h3>
+                  <div className={styles.personRole}>{person.role}</div>
                 </div>
               ))}
             </div>
