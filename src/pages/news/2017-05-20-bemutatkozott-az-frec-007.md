@@ -1,6 +1,7 @@
 ---
 title: 'Bemutatkozott az FREC-007'
 date: '2017-05-20T00:00:00.000Z'
+image: '/assets/uploads/2017-05-20-bemutatkozott-az-frec-007.jpg'
 ---
 
 Idén május 4-én, késő délután bemutattuk új autónkat a Budapesti Műszaki és Gazdaságtudományi Egyetem Q épületének aulájában. A rendezvényre szép számban jöttek el támogatóink, az egyetem képviselői és más érdeklődők is.

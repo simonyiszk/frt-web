@@ -1,6 +1,7 @@
 ---
 title: 'Címvédés a szezon első versenyén'
 date: '2017-06-23T00:00:00.000Z'
+image: '/assets/uploads/2017-06-23-cimvedes-a-szezon-elso-versenyen.jpg'
 ---
 
 <p>2017. június 9, hajnal 03:00: A BME Formula Racing Team elindul Németországba, hogy aztán 1200 km megtétele után megnyerje szezonja első versenyét!</p>
