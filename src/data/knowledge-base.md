@@ -2,7 +2,7 @@
 
 A Formula Student világszerte, egyetemi és főiskolai csapatok számára megrendezett autóversenyek gyűjtőneve, amelyben egyetemi és főiskolai hallgatókból álló csapatok versenyautó tervezésben és építésben mérik össze tudásukat. A küzdelem az autó megtervezésén és megépítésén túl az autó köré felépített teljes üzleti koncepció kidolgozásából, prezentálásából, valamint a projekt működéséhez szükséges anyagi háttér biztosításából áll.
 
-![](/assets/uploads/All-Teams-Photo-ALMONAT.jpg)
+![](/assets/uploads/FS.jpg)
 
 > A versenysorozat az 1980-as években az Egyesült Államokban jött létre, napjainkban viszont már az Egyesült Királyságban, Németországban, Olaszországban, Brazíliában a csendes-óceáni régióban és 2010 óta Magyarországon is rendeznek futamokat.
 
