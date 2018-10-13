@@ -1,4 +1,4 @@
-﻿- category: 'Gyémánt szintű támogatóink'
+﻿- category: 'Gyémánt fokozatú támogatóink'
   maxOrganizationsPerLine: 3
   showHeaders: true
   showDescriptions: true
@@ -45,7 +45,7 @@
       logo:
         image: '/assets/uploads/7_dSPACE-Logo_CMYK.svg'
         height: 8em
-- category: 'Arany szintű támogatóink'
+- category: 'Arany fokozatú támogatóink'
   maxOrganizationsPerLine: 3
   showHeaders: true
   showDescriptions: false
@@ -90,7 +90,7 @@
       logo:
         image: '/assets/uploads/7_ATT logo-v2.svg'
         height: 8em
-- category: 'Ezüst szintű támogatóink'
+- category: 'Ezüst fokozatú támogatóink'
   maxOrganizationsPerLine: 3
   showHeaders: false
   showDescriptions: false
@@ -205,7 +205,7 @@
       logo:
         image: '/assets/uploads/Schroth_Racing.svg'
         height: 8em
-- category: 'Bronz szintű támogatóink'
+- category: 'Bronz fokozatú támogatóink'
   maxOrganizationsPerLine: 4
   showHeaders: false
   showDescriptions: false
