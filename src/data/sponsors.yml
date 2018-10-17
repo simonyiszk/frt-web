@@ -296,7 +296,7 @@
         image: '/assets/uploads/MELASTA-LOGO.svg'
         height: 8em
     - name: 'Melior Laser'
-      website: 'http://www.meliorlaser.hu/hu/komplex-lemezmegmunkalas.html'
+      website: 'https://www.meliorlaser.hu/hu/komplex-lemezmegmunkalas'
       logo:
         image: '/assets/uploads/MeliorLaser.svg'
         height: 8em
