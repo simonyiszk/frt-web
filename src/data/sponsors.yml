@@ -34,8 +34,8 @@
         image: '/assets/uploads/5_AVL.svg'
         height: 8em
     - name: 'Trumpf Hungary Kft.'
-      description: 'A gyártástechnológia továbbfejlesztése, gazdaságos, precíz, jövőálló és hálózatba foglalt alakítása - ez az ő feladatok. Piac- és technológiavezetők, szerszámgépek és ipari gyártólézerek terén és innovációik révén szinte minden ágazatra hatással vannak.'
-      website: 'http://www.hu.trumpf.com/hu.html'
+      description: 'A Trumpf Hungary Kft. feladata és célja a gyártástechnológia továbbfejlesztése, gazdaságos, precíz, jövőálló és hálózatba foglalt alakítása. Piac- és technológiavezetők, szerszámgépek és ipari gyártólézerek terén. Innovációik révén szinte minden ágazatra hatással vannak.'
+      website: 'https://www.trumpf.com/hu_HU/'
       logo:
         image: '/assets/uploads/6_Trumpf.svg'
         height: 8em
