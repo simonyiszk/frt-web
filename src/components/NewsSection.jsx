@@ -17,6 +17,7 @@ const NewsSection = () => (
             allMarkdownRemark(
               filter: { fileAbsolutePath: { regex: "/news/" } }
               sort: { fields: [frontmatter___date], order: DESC }
+              limit: 6
             ) {
               edges {
                 node {
